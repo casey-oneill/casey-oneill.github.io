@@ -6,52 +6,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-        <title>Casey O'Neill</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <title>Contact | Casey O'Neill</title>
     </head>
-    <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><h4>Casey O'Neill</h4></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.html"><h5>Projects</h5></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html"><h5>About</h5></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="contact.html"><h5>Contact</h5></a>
-                            </li>
-                        </ul>
-                    </div>
+    <body class="d-flex flex-column min-vh-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Casey O'Neill</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="d-flex">
-                    <a class="me-2" href="https://www.linkedin.com/in/caseyoneill/"><h4><i class="fab fa-linkedin"></i></h4></a>
-                    <a href="https://github.com/casey-oneill/"><h4><i class="fab fa-github-square"></i></h4></a>
+                    <a class="me-2" href="https://www.linkedin.com/in/caseyoneill/"><h4 class="my-0"><i class="fab fa-linkedin"></i></h4></a>
+                    <a href="https://github.com/casey-oneill/"><h4 class="my-0"><i class="fab fa-github-square"></i></h4></a>
                 </div>
-            </nav>
-
-            <div class="container">
-                <h1>Contact</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </div>
+        </nav>
+        <!-- Navbar -->
 
-        <footer class="footer">
-            <div class="container">
+        <div class="content">
+            <!-- Page Content Header -->
+            <div class="bg-primary py-5">
+                <div class="container content-header">
+                    <div class="row justify-content-center">
+                        <h1 class="text-center ">Projects</h1>
+                        <h5 class="text-center">See what I've been working on</h5>
+                        <div class="content-header-description">
+                            <p class="text-center mt-3 text-muted">
+                                From personal websites such as this one to projects that I've been able to work on throughout my Co-op employments, here's what I've been a part of.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Content Header -->
+    
+            <!-- Page Content -->
+            <div class="bg-light py-5">
                 <div class="container">
-                    &copy <a href="index.html">Casey O'Neill</a> 2021
+                    <div class="row justify-content-center">
+                        <div class="card text-center px-0">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#personal">Personal</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#employer">Employer-Owned</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade active show" id="personal">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Personal Projects</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="employer">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Employer-Owned Projects</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Content -->
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer bg-primary py-3 mt-auto">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <div class="col-12 col-md-6">
+                        &copy <a href="index.html">Casey O'Neill</a> 2021
+                    </div>
+                    <div class="col-12 col-md-6">
+                        Icons provided by FontAwesome. Learn more 
+                        <a href="https://fontawesome.com/license">here</a>
+                    </div>
                 </div>
             </div>
         </footer>
+        <!-- Footer -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/34ce098b73.js" crossorigin="anonymous"></script>
     </body>
 </html>
