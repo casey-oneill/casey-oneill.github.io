@@ -16,7 +16,7 @@ img {
     object-fit: cover;
 }
 
-.card img:hover {
+a > img:hover {
     opacity: 80%;
 }
 
