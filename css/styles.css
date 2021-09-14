@@ -12,6 +12,14 @@ body {
     width: 75% !important;
 }
 
+img {
+    object-fit: cover;
+}
+
+.card img:hover {
+    opacity: 80%;
+}
+
 /* FOOTER */
 .footer {
     color: white;
