@@ -31,8 +31,8 @@
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <a class="me-2" href="https://www.linkedin.com/in/caseyoneill/"><h4 class="my-0"><i class="fab fa-linkedin"></i></h4></a>
-                    <a href="https://github.com/casey-oneill/"><h4 class="my-0"><i class="fab fa-github-square"></i></h4></a>
+                    <a class="me-2" href="https://www.linkedin.com/in/caseyoneill/" target="_blank"><h4 class="my-0"><i class="fab fa-linkedin"></i></h4></a>
+                    <a href="https://github.com/casey-oneill/" target="_blank"><h4 class="my-0"><i class="fab fa-github-square"></i></h4></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
                         <h5 class="text-center">See what I've been up to.</h5>
                         <div class="content-header-description">
                             <p class="text-center mt-3 text-muted">
-								From passion projects that develop during my spare time to projects completed as part of my studies to professional, employer-owned projects I've had to opportunity to work on, check out some of my projects.
+								From passion projects that I develop during my spare time to projects completed as part of my studies to professional, employer-owned projects I've had to opportunity to work on, check out some of my projects.
                             </p>
                         </div>
                     </div>
@@ -74,25 +74,36 @@
 
 						<!-- Personal Projects -->
 						<div class="col-12">
-							<div class="card p-5">
+							<div class="card py-3 px-0 py-md-5 px-md-5">
 								<div class="container">
 									<div class="row justify-content-center">
-										<div class="col-12 col-md-6">
+										<div class="col-12 col-md-6 pb-5 pb-md-0">
 											<div class="card shadow">
-												<img src="./img/projects/portfolio.png" class="card-img-top" height="300" />
+												<img src="./img/projects/portfolio.png" class="card-img-top project-img" height="300" />
+												<div class="card-header">
+													<div class="container m-0 p-0 mt-2">
+														<div class="row m-0 p-0">
+															<div class="col-10 m-0 p-0">
+																<h5>Portfolio</h5>
+															</div>
+															<div class="col-2 m-0 p-0">
+																<h5 class="text-end">
+																	<a href="https://casey-oneill.github.io/" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+																	<a href="https://github.com/casey-oneill/casey-oneill.github.io" target="_blank"><i class="fab fa-github"></i></a>
+																</h5>
+															</div>
+														</div>
+													</div>
+												</div>
 												<div class="card-body">
-													<h5 class="card-title">
-														<i class="fa fa-folder"></i> Portfolio
-														<i class="fab fa-github"></i>
-													</h5>
-													<p class="card-text">A static HTML website. This is my </p>
-													<h5>Skills Developed</h5>
-													<ul class="list-unstyled">
+													<p class="card-text">A static HTML website created to practise Bootstrap and responsive design principles.</p>
+													<h5>Concepts Practised</h5>
+													<ul>
 														<li>UI Design</li>
 														<li>Responsive Design</li>
 													</ul>
 													<h5>Technology Stack</h5>
-													<ul class="list-unstyled">
+													<ul>
 														<li>HTML</li>
 														<li>CSS</li>
 														<li>Bootstrap</li>
@@ -100,24 +111,96 @@
 														<li>GitHub Pages</li>
 													</ul>
 												</div>
-											</div>
-										</div>
-	
-										<div class="col-12 col-md-6">
-											<div class="card shadow">
-												<img src="./img/projects/x-term.png" class="card-img-top" height="300" />
-												<div class="card-body">
-													<h5 class="card-title"><i class="fa fa-gamepad"></i> X-TERM</h5>
-													<p class="card-text">A short video game created for a school project.</p>
-													<h5>Technology Stack</h5>
-													<ul class="list-unstyled">
-														<li>HTML</li>
-														<li>CSS</li>
-														<li>Bootstrap</li>
-													</ul>
+												<div class="card-footer">
+													<i>Ongoing.</i>
 												</div>
 											</div>
 										</div>
+	
+										<!-- X-TERM -->
+										<div class="col-12 col-md-6">
+											<div class="card shadow">
+												<img src="./img/projects/x-term-demo.gif" class="card-img-top project-img" height="300" />
+												<div class="card-header">
+													<div class="container mx-0 px-0 mt-2">
+														<div class="row mx-0 px-0">
+															<div class="col-10 mx-0 px-0">
+																<h5>X-TERM</h5>
+																<i>A turn-based puzzle game</i>
+															</div>
+															<div class="col-2 mx-0 px-0">
+																<h5 class="text-end">
+																	<a href="https://casey-oneill.itch.io/x-term/" target="_blank"><i class="fa fa-play-circle"></i></a>
+																	<a href="https://github.com/casey-oneill/casey-oneill.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+																</h5>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card-body">
+													<p class="card-text">
+														A turn-based puzzle game created as a course project.
+														I focused on game design, trying to incorporate an interesting mix of real-time and turn-based mechanics.
+														The assets used in this game were not created by me.
+													</p>
+													<h5>Concepts Practised</h5>
+													<ul>
+														<li>Game design</li>
+														<li>Project management</li>
+														<li>Game development with the Unity engine</li>
+														<li>Implementing a turn-based A* pathfinding algorithm</li>
+													</ul>
+													<h5>Technology Stack</h5>
+													<ul>
+														<li>Unity</li>
+														<li>C#</li>
+													</ul>
+												</div>
+												<div class="card-footer">
+													<i>Last updated April 2021.</i>
+												</div>
+											</div>
+										</div>
+										<!-- END X-TERM -->
+
+										<!-- Godot Roguelike -->
+										<div class="col-12 col-md-6 mt-5">
+											<div class="card shadow">
+												<img src="./img/projects/roguelike-demo.gif" class="card-img-top project-img" height="300" />
+												<div class="card-header mt-2">
+													<h5>Roguelike</h5>
+													<i>My first video game</i>
+												</div>
+												<div class="card-body">
+													<p class="card-text">
+														A project undertaken to learn about game development and animation, inspired by games like <i>Enter the Gungeon</i>.
+														This is a 2D roguelike created using the <a href="https://godotengine.org/" target="_blank">Godot</a> game engine.
+														I began this project during my 2nd year of university, and was able to implement basic combat mechanics and level generation.
+														All assets used in this game are my own creation.
+														<br /><br />
+														Not seen in the demo are enemies, which use a rudimentary pathfinding algorithm to navigate towards the player.
+													</p>
+													<h5>Concepts Practised</h5>
+													<ul>
+														<li>Game design</li>
+														<li>2D Pixel animation</li>
+														<li>Pathfinding with the Godot engine</li>
+														<li>Procedurally generating tile-based maps</li>
+														<li>Game development with the Godot engine</li>
+
+													</ul>
+													<h5>Technology Stack</h5>
+													<ul>
+														<li>Godot</li>
+														<li>GDScript (similar to Python)</li>
+													</ul>
+												</div>
+												<div class="card-footer">
+													<i>Last updated May 2020.</i>
+												</div>
+											</div>
+										</div>
+										<!-- END Godot Roguelike -->
 									</div>
 								</div>
 							</div>
@@ -133,7 +216,6 @@
 										Projects that I have worked on but do not own.
 										<br />
 										Out of respect for the privacy of past employers, I am unable to share the technology stacks and code of these applications.
-										Thanks for understanding!
 									</h6>
 								</div>
 							</div>
@@ -141,28 +223,38 @@
 
 						<!-- Employer-Owned Projects -->
 						<div class="col-12">
-							<div class="card p-5">
+							<div class="card py-3 px-0 py-md-5 px-md-5">
 								<div class="container">
 									<div class="row justify-content-center">
 										<div class="col-12 col-md-6">
 											<div class="card shadow">
-												<img src="./img/projects/ssnb.png" class="card-img-top" height="300" />
+												<img src="./img/projects/ssnb.png" class="card-img-top project-img" height="300" />
+												<div class="card-header">
+													<div class="container mx-0 px-0 mt-2">
+														<div class="row mx-0 px-0">
+															<div class="col-10 mx-0 px-0">
+																<h5>Social Supports NB</h5>
+															</div>
+															<div class="col-2 mx-0 px-0">
+																<h5 class="text-end"><a href="https://socialsupportsnb.ca/en/" target="_blank"><i class="fa fa-external-link-alt"></i></a></h5>
+															</div>
+														</div>
+													</div>
+												</div>
 												<div class="card-body">
-													<h5 class="card-title">Social Supports NB</h5>
-													<p class="card-text">A static HTML website. This is my </p>
-													<h5>Skills Developed</h5>
-													<ul class="list-unstyled">
-														<li>UI Design</li>
+													<p class="card-text">Worked on during my time at VeroSource Solutions.</p>
+													<h5>Concepts Practised</h5>
+													<ul>
 														<li>Responsive Design</li>
+														<li>Webpage styling with Bootstrap</li>
 													</ul>
-													<h5>Technology Stack</h5>
-													<ul class="list-unstyled">
-														<li>HTML</li>
-														<li>CSS</li>
-														<li>Bootstrap</li>
-														<li>Bootswatch</li>
-														<li>GitHub Pages</li>
+													<h5>Individual Contribution</h5>
+													<ul>
+														<li>Styling for the landing page</li>
 													</ul>
+												</div>
+												<div class="card-footer">
+													<i>Summer 2021.</i>
 												</div>
 											</div>
 										</div>
@@ -184,31 +276,34 @@
 
 						<!-- Academic Projects -->
 						<div class="col-12">
-							<div class="card p-5">
+							<div class="card py-3 px-0 py-md-5 px-md-5">
 								<div class="container">
 									<div class="row justify-content-center">
 										<div class="col-12 col-md-6">
 											<div class="card shadow">
-												<img src="./img/projects/portfolio.png" class="card-img-top" height="300" />
+												<img src="./img/projects/hci.png" class="card-img-top project-img" height="300" />
+												<div class="card-header py-3">
+													<h5>Self-Directed Research Project</h5>
+													<h6 class="my-0 py-0"><i>Studying Timer-Based Mechanics in Video Games</i></h6>
+												</div>
 												<div class="card-body">
-													<h5 class="card-title">
-														<i class="fa fa-folder"></i> Portfolio
-														<i class="fab fa-github"></i>
-													</h5>
-													<p class="card-text">A static HTML website. This is my </p>
-													<h5>Skills Developed</h5>
-													<ul class="list-unstyled">
-														<li>UI Design</li>
-														<li>Responsive Design</li>
+													<p class="card-text">
+														Under the supervision of Dr. Daniel Rea, Co-Director of the <a href="https://hcilab.github.io/" target="_blank">UNB HCI Lab</a>, I am working to complete a self-directed study on the impact of <b>timer-based mechanics in video games</b>.
+														I am currently working to create a implementations of various <i>Choose Your Own Adventure</i> stories using the <a href="https://twinery.org/" target="_blank">Twine</a> game engine.
+														Timer-based mechanics will be added semi-randomly, and participants of the study will respond to surveys regarding their experience of this game.
+													</p>
+													<h5>Concepts Practised</h5>
+													<ul>
+														<li>Planning a research study</li>
+														<li>Designing a reasearch study</li>
 													</ul>
 													<h5>Technology Stack</h5>
-													<ul class="list-unstyled">
-														<li>HTML</li>
-														<li>CSS</li>
-														<li>Bootstrap</li>
-														<li>Bootswatch</li>
-														<li>GitHub Pages</li>
+													<ul>
+														<li>Twine</li>
 													</ul>
+												</div>
+												<div class="card-footer">
+													<i>Ongoing.</i>
 												</div>
 											</div>
 										</div>
@@ -227,13 +322,9 @@
         <!-- Footer -->
         <footer class="footer bg-primary py-3 mt-auto">
             <div class="container">
-                <div class="row justify-content-between align-items-end">
-                    <div class="col-12 col-md-6">
-                        &copy 2021 <a href="index.html">Casey O'Neill</a>
-                    </div>
-                    <div class="col-12 col-md-6 text-muted">
-                        Icons provided by FontAwesome. Learn more 
-                        <a href="https://fontawesome.com/license">here</a>.
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        &copy <a href="index.html">Casey O'Neill</a> 2021
                     </div>
                 </div>
             </div>

@@ -12,6 +12,10 @@ body {
     width: 75% !important;
 }
 
+.project-img {
+	filter: brightness(80%);
+}
+
 img {
     object-fit: cover;
 }
