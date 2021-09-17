@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(44,62,80) !important;
+}
+
+/* PAGE CONTENT */
+
+.content-header {
+    color: white;
+}
+
+.content-header-description {
+    width: 75% !important;
+}
+
+.project-img {
+	filter: brightness(80%);
+}
+
+.badge {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+img {
+    object-fit: cover;
+}
+
+a > img:hover {
+    opacity: 80%;
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    /* PAGE CONTENT */
+    .content-header-description {
+        width: 50% !important;
+    }
+}
