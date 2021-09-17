@@ -16,6 +16,11 @@ body {
 	filter: brightness(80%);
 }
 
+.badge {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
 img {
     object-fit: cover;
 }
