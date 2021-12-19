@@ -36,34 +36,13 @@ img {
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.nav-link::after {
-	content: "";
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0;
-	background: transparent;
+.navbar-brand {
+	color: white;
 	transition: all 0.3s;
 }
 
-.nav-link:hover::after {
-	width: 100%;
-	background: #18bc9c;
-}
-
-.navbar-brand::after {
-	content: "";
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0;
-	background: transparent;
-	transition: all 0.3s;
-}
-
-.navbar-brand:hover::after {
-	width: 100%;
-	background: white;
+.navbar-brand:hover {
+	color: #18bc9c !important;
 }
 
 /* FOOTER */

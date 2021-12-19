@@ -9,8 +9,8 @@ class Header extends HTMLElement {
 			<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">Casey O'Neill</a>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
 								<a id="nav-link-projects" class="nav-link" href="projects.html">Projects</a>
 							</li>
