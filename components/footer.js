@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 	}
 
 	connectedCallback() {
-		this.innerHTML = `
+		this.innerHTML = (`
 			<footer class="footer bg-primary py-3 mt-auto">
 				<div class="container">
 					<div class="row justify-content-center">
@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
 					</div>
 				</div>
 			</footer>
-		`;
+		`);
 	}
 }
 

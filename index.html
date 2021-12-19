@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="components/header.js" type="text/javascript" defer></script>
 		<script src="components/footer.js" type="text/javascript" defer></script>
         
@@ -18,6 +19,8 @@
         <title>Casey O'Neill</title>
     </head>
     <body class="d-flex flex-column min-vh-100">
+
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
 		<header-component></header-component>
 
@@ -40,56 +43,66 @@
             </div>
             <!-- Page Content Header -->
     
-            <!-- Page Content -->
             <div class="bg-light py-5">
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-lg-3">
-                        <div class="col py-3">
-                            <div class="card shadow m-auto h-100">
-                                <a href="projects.html#personal">
-                                    <img src="img/index-card-games.jpg" class="card-img-top" height="250" />
-                                </a>
-                                <div class="card-body">
-									<h5 class="card-title">Part-time Game Developer</h5>
-									<p class="card-text">
-										Video games sparked my interest in programming and continue to be a passion of mine.
-										Between studying and working, I enjoy creating Indie games.
-									</p>
-									<a href="projects.html#personal" class="btn btn-primary">Personal Projects</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col py-3">
-                            <div class="card shadow m-auto h-100">
-                                <a href="projects.html#employer">
-                                    <img src="img/index-card-code.jpg" class="card-img-top" height="250" />
-                                </a>
-                                <div class="card-body">
-									<h5 class="card-title">Full-stack Developer</h5>
-									<p class="card-text">I have been employed primarily as a full-stack web developer, involved in everything from UI design to PostgreSQL scripting.</p>
-									<a href="projects.html#employer" class="btn btn-primary">Professional Projects</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col py-3">
-                            <div class="card shadow m-auto h-100">
-                                <a href="projects.html#academic">
-                                    <img src="img/index-card-student.jpg" class="card-img-top" height="250" />
-                                </a>
-                                <div class="card-body">
-									<h5 class="card-title">Lifelong Student</h5>
-									<p class="card-text">I enjoy learning and am currently working on a self-directed research project with a Co-Director of UNB's HCI Lab.</p>
-									<a href="projects.html#academic" class="btn btn-primary">Academic Projects</a>
-                                </div>
-                            </div>
-                        </div>
+						<div id="index-cards"></div>
+						<script id="index-cards-template" type="text/x-handlebars-template">
+							<div class="row row-cols-1 row-cols-lg-3">
+								{{#each cards}}
+									<div class="col py-3">
+										<div class="index-card card m-auto h-100">
+											<img src="{{img}}" class="card-img-top" height="250" />
+											<div class="card-body">
+												<h5 class="card-title">{{title}}</h5>
+												<p class="card-text">
+													{{blurb}}
+												</p>
+												<a href="{{link}}" class="btn btn-primary stretched-link">{{button}}</a>
+											</div>
+										</div>
+									</div>
+								{{/each}}
+							</div>
+						</script>
                     </div>
                 </div>
             </div>
-            <!-- Page Content -->
         </div>
         
 		<footer-component></footer-component>
 		
+		<script type="text/javascript">
+			var template = $("#index-cards-template").html();
+			var templateScript = Handlebars.compile(template);
+
+			var context = {
+				cards: [
+					{
+						link: "projects.html#personal",
+						img: "img/index-card-games.jpg",
+						title: "Part-time Game Developer",
+						blurb: "Video games sparked my interest in programming and continue to be a passion of mine. Between studying and working, I enjoy creating Indie games.",
+						button: "Personal Projects",
+					},
+					{
+						link: "projects.html#employer",
+						img: "img/index-card-code.jpg",
+						title: "Full-stack Developer",
+						blurb: "I have been employed primarily as a full-stack web developer, involved in everything from UI design to PostgreSQL scripting.",
+						button: "Professional Projects",
+					},
+					{
+						link: "projects.html#academic",
+						img: "img/index-card-student.jpg",
+						title: "Lifelong Student",
+						blurb: "I enjoy learning and am currently working on a self-directed research project with a Co-Director of UNB's HCI Lab.",
+						button: "Academic Projects",
+					},
+				]
+			};
+
+			var html = templateScript(context);
+			$("#index-cards").append(html);
+		</script>
     </body>
 </html>
