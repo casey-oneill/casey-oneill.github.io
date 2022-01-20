@@ -25,8 +25,28 @@ img {
     object-fit: cover;
 }
 
-a > img:hover {
-    opacity: 80%;
+.index-card {
+	top: 0px;
+	box-shadow: none;
+	transition: all 0.3s;
+}
+
+.index-card:hover {
+	top: -5px;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.navbar-brand {
+	color: white;
+	transition: all 0.3s;
+}
+
+.navbar-brand:hover {
+	color: #18bc9c !important;
+}
+
+.navbar i {
+	transition: all 0.3s;
 }
 
 /* FOOTER */
