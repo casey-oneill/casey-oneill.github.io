@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="components/header.js" type="text/javascript" defer></script>
 		<script src="components/footer.js" type="text/javascript" defer></script>
 
@@ -30,7 +31,7 @@
                         <h5 class="text-center">See what I've been up to.</h5>
                         <div class="content-header-description">
                             <p class="text-center mt-3 text-muted">
-								From passion projects that I develop during my spare time to projects completed as part of my studies to professional, employer-owned projects I've had to opportunity to work on.
+								From indie game development to school projects, check out the projects that I've been working on.
                             </p>
                         </div>
                     </div>
@@ -47,7 +48,6 @@
 							<div class="card shadow-lg bg-primary mb-3">
 								<div class="card-body text-light text-center">
 									<h5 class="card-title">Personal Projects</h5>
-									<h6 class="card-subtitle">Projects that I enjoy working on in my spare time.</h6>
 								</div>
 							</div>
 						</div>
@@ -57,6 +57,8 @@
 							<div class="card py-3 px-0 py-md-5 px-md-5">
 								<div class="container">
 									<div class="row justify-content-center">
+
+										<!-- Portfolio Website -->
 										<div class="col-12 col-md-6 pb-5 pb-md-0">
 											<div class="card shadow">
 												<img src="./img/projects/portfolio.png" class="card-img-top project-img" height="300" />
@@ -68,7 +70,6 @@
 															</div>
 															<div class="col-2 m-0 p-0">
 																<h5 class="text-end">
-																	<a href="https://casey-oneill.github.io/" target="_blank"><i class="fa fa-external-link-alt"></i></a>
 																	<a href="https://github.com/casey-oneill/casey-oneill.github.io" target="_blank"><i class="fab fa-github"></i></a>
 																</h5>
 															</div>
@@ -96,9 +97,54 @@
 												</div>
 											</div>
 										</div>
+										<!-- END Portfolio Website -->
+
+										<!-- Book Swap Webapp -->
+										<div class="col-12 col-md-6 pb-5 pb-md-0">
+											<div class="card shadow">
+												<img src="./img/projects/book-swap.png" class="card-img-top project-img" height="300" />
+												<div class="card-header">
+													<div class="container m-0 p-0 mt-2">
+														<div class="row m-0 p-0">
+															<div class="col-10 m-0 p-0">
+																<h5>Book Swap</h5>
+															</div>
+															<div class="col-2 m-0 p-0">
+																<h5 class="text-end">
+																	<a href="https://github.com/casey-oneill/cs-4015-project/" target="_blank"><i class="fab fa-github"></i></a>
+																</h5>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card-body">
+													<p class="card-text">A full-functioning web application for buying and selling used textbooks. Created for a <a href="https://www.unb.ca/academics/calendar/undergraduate/current/frederictoncourses/computer-science/cs-4015.html" target="_blank">CS4015</a> group project.</p>
+													<h5>Concepts Practised</h5>
+													<ul>
+														<li>UI Design</li>
+														<li>Responsive Design</li>
+														<li>Full Stack Web Development</li>
+													</ul>
+													<h5>Technology Stack</h5>
+													<ul>
+														<li>Spring Boot</li>
+														<li>Spring Data JPA</li>
+														<li>Spring Security</li>
+														<li>MySQL</li>
+														<li>JavaServer Faces</li>
+														<li>Docker</li>
+														<li>OpenAPI</li>
+													</ul>
+												</div>
+												<div class="card-footer">
+													<i>Last updated March 2022.</i>
+												</div>
+											</div>
+										</div>
+										<!-- END Book Swap Webapp -->
 	
 										<!-- X-TERM -->
-										<div class="col-12 col-md-6">
+										<div class="col-12 col-md-6 mt-5">
 											<div class="card shadow">
 												<img src="./img/projects/x-term-demo.gif" class="card-img-top project-img" height="300" />
 												<div class="card-header">
@@ -111,7 +157,7 @@
 															<div class="col-2 mx-0 px-0">
 																<h5 class="text-end">
 																	<a href="https://casey-oneill.itch.io/x-term/" target="_blank"><i class="fa fa-play-circle"></i></a>
-																	<!--<a href="https://github.com/casey-oneill/casey-oneill.github.io/" target="_blank"><i class="fab fa-github"></i></a>-->
+																	<a href="https://github.com/CS-2053-Winter-2021/course-project-2d-casey-oneill" target="_blank"><i class="fab fa-github"></i></a>
 																</h5>
 															</div>
 														</div>
@@ -185,70 +231,11 @@
 						</div>
 						<!-- END Personal Projects -->
 
-						<!-- Employer-Owned Projects Title -->
-						<div id="employer" class="col-12">
-							<div class="card shadow-lg bg-primary mt-5 mb-3">
-								<div class="card-body text-light text-center">
-									<h5 class="card-title">Employer-Owned Projects</h5>
-									<h6 class="card-subtitle">
-										Projects that I have worked on but do not own.
-										<br />
-										Out of respect for the privacy of past employers, I am unable to share specific technologies used to create these applications.
-									</h6>
-								</div>
-							</div>
-						</div>
-
-						<!-- Employer-Owned Projects -->
-						<div class="col-12">
-							<div class="card py-3 px-0 py-md-5 px-md-5">
-								<div class="container">
-									<div class="row justify-content-center">
-										<div class="col-12 col-md-6">
-											<div class="card shadow">
-												<img src="./img/projects/ssnb.png" class="card-img-top project-img" height="300" />
-												<div class="card-header">
-													<div class="container mx-0 px-0 mt-2">
-														<div class="row mx-0 px-0">
-															<div class="col-10 mx-0 px-0">
-																<h5>Social Supports NB</h5>
-															</div>
-															<div class="col-2 mx-0 px-0">
-																<h5 class="text-end"><a href="https://socialsupportsnb.ca/en/" target="_blank"><i class="fa fa-external-link-alt"></i></a></h5>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="card-body">
-													<p class="card-text">Worked on during my time at VeroSource Solutions.</p>
-													<h5>Concepts Practised</h5>
-													<ul>
-														<li>Responsive Design</li>
-														<li>Webpage styling with CSS and popular CSS libraries</li>
-														<li>Web application development with a JavaScript framework</li>
-													</ul>
-													<h5>Individual Contribution</h5>
-													<ul>
-														<li>Styling for the landing page</li>
-													</ul>
-												</div>
-												<div class="card-footer">
-													<i>Summer 2021.</i>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- END Employer-Owned Projects -->
-
-						<!-- Employer-Owned Projects Title -->
+						<!-- Academic Projects Title -->
 						<div id="academic" class="col-12">
 							<div class="card shadow-lg bg-primary mt-5 mb-3">
 								<div class="card-body text-light text-center">
 									<h5 class="card-title">Academic Projects</h5>
-									<h6 class="card-subtitle">Research and learning projects.</h6>
 								</div>
 							</div>
 						</div>
