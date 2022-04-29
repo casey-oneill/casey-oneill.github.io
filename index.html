@@ -1,109 +1,342 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script src="components/header.js" type="text/javascript" defer></script>
-		<script src="components/footer.js" type="text/javascript" defer></script>
-        
-        <link rel="icon" type="image/png" href="img/code-json.png" />
-
-        <title>Casey O'Neill</title>
-    </head>
-    <body class="d-flex flex-column min-vh-100">
-
-		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-
-		<header-component></header-component>
-
-        <div class="content">
-            <!-- Page Content Header -->
-            <div class="bg-primary py-5">
-                <div class="container content-header">
-                    <div class="row justify-content-center">
-                        <h1 class="text-center ">Hi, I'm Casey!</h1>
-                        <h5 class="text-center">I study Computer Science and Arts/Philosophy at the University of New Brunswick.</h5>
-                        <div class="content-header-description">
-                            <p class="text-center mt-3 text-muted">
-                                As a UNB Faculty of Computer Science Co-op student, I've been working as a full-stack web developer since 2018.
-                                I enjoy creating interactive, visually interesting programs, such as <b>video games</b> and <b>web applications</b>.
-                            </p>
-							<p class="text-center mt-3 text-muted">See some of my projects <a href="projects.html">here</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Content Header -->
-    
-            <div class="bg-light py-5">
-                <div class="container">
-						<div id="index-cards"></div>
-						<script id="index-cards-template" type="text/x-handlebars-template">
-							<div class="row row-cols-1 row-cols-lg-3">
-								{{#each cards}}
-									<div class="col py-3">
-										<div class="index-card card m-auto h-100">
-											<img src="{{img}}" class="card-img-top" height="250" />
-											<div class="card-body">
-												<h5 class="card-title">{{title}}</h5>
-												<p class="card-text">
-													{{blurb}}
-												</p>
-												<a href="{{link}}" class="btn btn-primary stretched-link">{{button}}</a>
-											</div>
-										</div>
-									</div>
-								{{/each}}
-							</div>
-						</script>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-		<footer-component></footer-component>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		
-		<script type="text/javascript">
-			var template = $("#index-cards-template").html();
-			var templateScript = Handlebars.compile(template);
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css">
 
-			var context = {
-				cards: [
-					{
-						link: "projects.html#personal",
-						img: "img/index-card-games.jpg",
-						title: "Part-time Game Developer",
-						blurb: "Video games sparked my interest in programming. Between studying and working, I enjoy creating indie games.",
-						button: "Personal Projects",
-					},
-					{
-						link: "projects.html#employer",
-						img: "img/index-card-code.jpg",
-						title: "Full-stack Developer",
-						blurb: "I have been employed primarily as a full-stack web developer, involved in everything from UI design to PostgreSQL scripting.",
-						button: "Professional Projects",
-					},
-					{
-						link: "projects.html#academic",
-						img: "img/index-card-student.jpg",
-						title: "Lifelong Student",
-						blurb: "I enjoy learning and am currently working on a self-directed research project under the supervision of a UNB professor.",
-						button: "Academic Projects",
-					},
-				]
-			};
+		<link rel="icon" type="image/png" href="img/code-json.png"/>
+		<title>Casey O'Neill</title>
+	</head>
 
-			var html = templateScript(context);
-			$("#index-cards").append(html);
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+	<body id="top" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="56">
+		<nav id="navbar" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark shadow">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Casey O'Neill</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#top">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experience">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Biography -->
+		<section id="biography" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="row justify-content-center">
+							<div class="col-6"><img src="img/portrait.jpg" class="img-fluid rounded-circle"></div>
+						</div>
+						<div class="row mt-3">
+							<h3 class="text-center">Casey O'Neill</h3>
+						</div>
+						<div class="row mb-3">
+							<h3 class="text-center"><small class="text-muted">Student</small></h3>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-2 text-center">
+								<a href="mailto:casey.oneill@unb.ca"><span class="fa fa-envelope fa-2x"/></a>
+							</div>
+							<div class="col-2 text-center">
+								<a href="https://github.com/casey-oneill/" target="_blank"><span class="fab fa-github fa-2x"/></a>
+							</div>
+							<div class="col-2 text-center">
+								<a href="https://www.linkedin.com/in/caseyoneill/" target="_blank"><span class="fab fa-linkedin fa-2x"/></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="row mb-3">
+							<div class="col">
+								<h1>Hi, I'm Casey!</h1>
+								<p>
+									I'm currently studying computer science and philosophy at the University of New Brunswick.
+								</p>
+								<p>
+									I've completed four work terms through the UNB co-op program. I've worked as a web developer at Populus Global Solutions,
+									Innovatia, and VeroSource Solutions. Outside of work, I'm a programming enthusiast and enjoy creating video games and completing
+									coding challenges like the Advent of Code.
+								</p>
+								<p>
+									My interests lie in creating visually engaging, interactive software.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<h3>Interests</h3>
+								<ul>
+									<li>Human-Computer Interaction</li>
+									<li>Web Application Development</li>
+									<li>Responsive Design</li>
+								</ul>
+							</div>
+							<div class="col">
+								<h3>Education</h3>
+								<ul>
+									<li>Bachelor of Computer Science<br/><small class="text-muted">University of New Brunswick</small></li>
+									<li>Bachelor of Arts (Philosophy)<br/><small class="text-muted">University of New Brunswick</small></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- END Biography -->
+
+		<!-- Skills -->
+		<section id="skills" class="bg-light py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-5">
+						<h1 class="text-center">Skills</h1>
+					</div>
+					<div class="col">
+						<div class="row mb-3">
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fab fa-java fa-4x"/></div>
+								<h3 class="text-center">Java</h3>
+								<p class="text-center">Spring (Boot & MVC), JavaFX</p>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fab fa-bootstrap fa-4x"/></div>
+								<h3 class="text-center">Responsive Design</h3>
+								<p class="text-center">CSS, HTML, Bootstrap</p>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fa fa-code-branch fa-4x"/></div>
+								<h3 class="text-center">Version Control</h3>
+								<p class="text-center">Git, GitHub, GitLab, Jira Software</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fab fa-unity fa-4x"/></div>
+								<h3 class="text-center">Game Development</h3>
+								<p class="text-center">Unity, Godot, Basic 2D Animation</p>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fab fa-react fa-4x"/></div>
+								<h3 class="text-center">JavaScript Frameworks</h3>
+								<p class="text-center">React, Angular</p>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="text-center mb-2"><span class="fa fa-database fa-4x"/></div>
+								<h3 class="text-center">Databases</h3>
+								<p class="text-center">PostgreSQL, MySQL</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Skills -->
+
+		<!-- Experience -->
+		<section id="experience" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-5">
+						<h1 class="text-center">Experience</h1>
+					</div>
+					<div class="col-12 mb-5">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="text-muted">Software Developer</h5>
+								<h5>VeroSource Solutions</h5>
+								<p>May 2021 - August 2021</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-5">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="text-muted">Co-op Software Developer</h5>
+								<h5>Innovatia</h5>
+								<p>September 2020 - December 2020</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mb-5">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="text-muted">Co-op Software Developer</h5>
+								<h5>Populus Global Solutions</h5>
+								<p>May 2019 - August 2019</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="text-muted">Receptionist / Youth Program Leader</h5>
+								<h5>AX: The Arts & Culture Centre of Sussex</h5>
+								<p>June 2018 - August 2018</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Experience -->
+
+		<!-- Projects -->
+		<!-- Skills -->
+		<section id="projects" class="bg-light py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-xl-2 mb-5">
+						<div class="row">
+							<div class="col">
+								<h1>Projects</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-xl-10">
+						<div class="row">
+							<div class="col-12 mb-5">
+								<div class="row">
+									<div class="col-8">
+										<h5>Portfolio</h5>
+										<p>A static HTML website created to practise Bootstrap and responsive design principles.</p>
+										<p class="text-muted">Casey O'Neill</p>
+										<a href="https://github.com/casey-oneill/casey-oneill.github.io" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github"></i> Code</a>
+									</div>
+									<div class="col-4">
+										<img src="img/projects/portfolio.png" class="fit-image"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-5">
+								<div class="row">
+									<div class="col-8">
+										<h5>Book Swap</h5>
+										<p>A fully-functioning web application for buying and selling used textbooks. Created for a <a href="https://www.unb.ca/academics/calendar/undergraduate/current/frederictoncourses/computer-science/cs-4015.html" target="_blank">CS4015</a> group project.</p>
+										<p class="text-muted">Casey O'Neill, Bin Liao, Logan Fitzpatrick, Patrick Mollins, Qihao Guo</p>
+										<a href="https://github.com/casey-oneill/casey-oneill.github.io" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github"></i> Code</a>
+									</div>
+									<div class="col-4">
+										<img src="img/projects/book-swap.png" class="fit-image"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-5">
+								<div class="row">
+									<div class="col-8">
+										<h5>X-TERM</h5>
+										<p>A turn-based puzzle game created as a course project.</p>
+										<p class="text-muted">Casey O'Neill</p>
+										<a href="https://github.com/CS-2053-Winter-2021/course-project-2d-casey-oneill" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github"></i> Code</a>
+										<a href="https://casey-oneill.itch.io/x-term/" target="_blank" class="btn btn-outline-primary"><i class="fa fa-play-circle"></i> Live Demo</a>
+									</div>
+									<div class="col-4">
+										<img src="img/projects/x-term-demo.gif" class="fit-image"/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-5">
+								<div class="row">
+									<div class="col-8">
+										<h5>Roguelike</h5>
+										<p>A project undertaken to learn about game development and animation.</p>
+										<p class="text-muted">Casey O'Neill</p>
+										<a href="https://github.com/casey-oneill/roguelike" target="_blank" class="btn btn-outline-primary disabled"><i class="fab fa-github"></i> Code</a>
+									</div>
+									<div class="col-4">
+										<img src="img/projects/roguelike-demo.gif" class="fit-image"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Projects -->
+
+		<!-- Contact -->
+		<section id="contact" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-3 mb-4">
+						<div class="row">
+							<div class="col">
+								<h1>Contact</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-9">
+						<div class="row">
+							<div class="col-12">
+								<div class="card shadow-sm">
+									<div class="card-body">
+										<h5><a href="mailto:casey.oneill@unb.ca" class="plain-link"><span class="fa fa-envelope"></span> Email</a></h5>
+										<p>casey.oneill@unb.ca</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 my-3">
+								<div class="card shadow-sm">
+									<div class="card-body">
+										<h5><a href="https://github.com/casey-oneill/ " target="_blank" class="plain-link"><span class="fab fa-github"></span> GitHub</a></h5>
+										<p>casey-oneill</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="card shadow-sm">
+									<div class="card-body">
+										<h5><a href="https://www.linkedin.com/in/caseyoneill/" target="_blank" class="plain-link"><span class="fab fa-linkedin"></span> LinkedIn</a></h5>
+										<p>Casey O'Neill</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Contact -->
+
+		<footer class="footer py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						&copy <a href="index.html">Casey O'Neill</a> 2022
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
 </html>
