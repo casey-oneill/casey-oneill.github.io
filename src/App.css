@@ -1,0 +1,15 @@
+html {
+	scroll-padding-top: 72px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar-brand:hover {
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+}
