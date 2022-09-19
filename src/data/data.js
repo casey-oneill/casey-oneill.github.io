@@ -33,24 +33,25 @@ export const data = {
 			"description": "PostgreSQL, MySQL, Spring Data JPA"
 		}
 	],
-	"experience": [
-		{
-			"title": "NSERC USRA Student",
-			"company": "UNB Human Computer-Interaction Lab",
-			"link": "https://hcilab.github.io/",
-			"dates": [
-				"May 2022 - August 2022",
-			],
-			"description": "Studying the role of robot personality in human-robot interactions.",
-		},
+	"experiences": [
 		{
 			"title": "Software Developer",
 			"company": "VeroSource Solutions",
 			"link": "https://www.verosource.com/",
 			"dates": [
 				"May 2021 - August 2021",
+				"September 2022 - Present",
 			],
-			"description": "Worked as a full stack React, Java, and Spring Boot web developer.",
+			"description": "Working as a full stack React, Java, and Spring Boot web developer.",
+		},
+		{
+			"title": "Research Assistant",
+			"company": "UNB Human Computer-Interaction Lab",
+			"link": "https://hcilab.github.io/",
+			"dates": [
+				"May 2022 - August 2022",
+			],
+			"description": "Studied the role of robot personality in human-robot interactions by preparing an experiment.",
 		},
 		{
 			"title": "Co-op Software Developer",
@@ -73,6 +74,12 @@ export const data = {
 		}
 	],
 	"projects": [
+		{
+			"title": "OctoBlog",
+			"description": "A free and open source blog template using GitHub services, designed for non-developers.",
+			"authors": "Casey O'Neill",
+			"codeLink": "https://github.com/casey-oneill/octo-blog",
+		},
 		{
 			"title": "Portfolio",
 			"description": "A personal website developed using React and Bootstrap. Hosted using GitHub Pages. Created to practise web development and responsive design principles.",

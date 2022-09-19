@@ -8,8 +8,8 @@ import 'bootswatch/dist/flatly/bootstrap.min.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
