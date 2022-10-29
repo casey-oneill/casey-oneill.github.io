@@ -7,7 +7,7 @@ import AccordionItem from 'react-bootstrap/esm/AccordionItem';
 
 const ProjectsList = () => {
 	const projectItems = projects.map((project, i) =>
-		<AccordionItem eventKey={i}>
+		<AccordionItem eventKey={i} key={i}>
 			<Accordion.Header>{project.title}</Accordion.Header>
 			<Accordion.Body as={Card} border="light p-0">
 				<Card.Body>

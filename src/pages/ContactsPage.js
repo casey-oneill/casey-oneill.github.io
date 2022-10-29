@@ -4,8 +4,8 @@ import ContactCard from "../components/ContactCard";
 import { contacts } from "../data/data";
 
 const ContactsPage = () => {
-	const contactItems = contacts.map((contact) =>
-		<ContactCard {...contact} />
+	const contactItems = contacts.map((contact, i) =>
+		<ContactCard {...contact} key={i} />
 	);
 
 	return (

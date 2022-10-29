@@ -19,7 +19,7 @@ const Header = () => {
 	return (
 		<Navbar expanded={open} expand="md" bg="primary" variant="dark" fixed="top">
 			<Container>
-				<Navbar.Brand as={Link}><Link offset={offset} onClick={toggleOpen} to="home">Casey O'Neill</Link></Navbar.Brand>
+				<Navbar.Brand href="https://casey-oneill.github.io/">Casey O'Neill</Navbar.Brand>
 				<Navbar.Toggle onClick={toggleOpen} />
 				<Navbar.Collapse id="navbar-nav">
 					<Nav className="me-auto">

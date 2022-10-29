@@ -4,8 +4,8 @@ import ExperienceCard from "../components/ExperienceCard";
 import { experiences } from "../data/data";
 
 const ExperiencesPage = () => {
-	const experiencesItems = experiences.map((experience) =>
-		<ExperienceCard {...experience} />
+	const experiencesItems = experiences.map((experience, i) =>
+		<ExperienceCard key={i} {...experience} />
 	);
 
 	return (
