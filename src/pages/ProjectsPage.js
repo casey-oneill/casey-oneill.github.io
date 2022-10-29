@@ -1,44 +1,21 @@
-import { Component } from "react";
-import ProjectCard from "../components/ProjectCard";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import ProjectsList from "../components/ProjectsList";
 
-class ProjectsPage extends Component {
+const ProjectsPage = () => {
 
-	projects = () => {
-		var projects = [];
-		this.props.projects.forEach((e) => {
-			projects.push(
-				<div className="col-12 mb-5">
-					<div className="row">
-						<div className="col-8">
-							<ProjectCard {...e} />
-						</div>
-					</div>
-				</div>
-			);
-		});
-		return projects;
-	}
-
-	render() {
-		return (
-			<div className="container">
-				<div className="row">
-					<div className="col-12 col-xl-4 mb-5">
-						<div className="row">
-							<div className="col">
-								<h1>Projects</h1>
-							</div>
-						</div>
-					</div>
-					<div className="col-12 col-xl-8">
-						<div className="row">
-							{this.projects()}
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
-}
+	return (
+		<Container>
+			<Row>
+				<Col xs={12} lg={3} className="mb-3">
+					<h1>Projects</h1>
+				</Col>
+				<Col xs={12} lg={9}>
+					<ProjectsList />
+				</Col>
+			</Row>
+		</Container>
+	);
+};
 
 export default ProjectsPage;

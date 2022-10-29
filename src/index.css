@@ -13,5 +13,13 @@ code {
 }
 
 .app {
-	margin-top: 72px;
+	margin-top: 56px;
+}
+
+a.nav-link:hover {
+	cursor: pointer;
+}
+
+a.nav-link svg {
+	font-size: larger;
 }

@@ -1,30 +1,24 @@
-import { Component } from "react";
+import React from "react";
+import { Card } from "react-bootstrap";
 
-class ExperienceCard extends Component {
+const ExperienceCard = (props) => {
+	const { title, link, company, description, dates } = props;
 
-	formattedDates = () => {
-		var dates = []
-		this.props.dates.forEach((d) => {
-			dates.push(
-				<p className="m-0">{d}</p>
-			);
-		});
-		return dates;
-	}
-
-	render() {
-		const { title, link, company, description } = this.props;
-		return (
-			<div className="card shadow-sm">
-				<div className="card-body">
-					<h5>{title}</h5>
-					<h5><a href={link}>{company}</a></h5>
-					<p className="text-muted">{this.formattedDates()}</p>
-					<p>{description}</p>
-				</div>
-			</div>
-		);
-	}
-}
+	return (
+		<Card>
+			<Card.Body>
+				<Card.Title>{title}</Card.Title>
+				<Card.Subtitle>
+					<a href={link}>{company}</a>
+				</Card.Subtitle>
+				<Card.Text>
+					{dates.join(', ')}
+					<br />
+					{description}
+				</Card.Text>
+			</Card.Body >
+		</Card>
+	);
+};
 
 export default ExperienceCard;

@@ -1,19 +1,18 @@
-import { Component } from "react";
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Card } from 'react-bootstrap';
 
-class ContactCard extends Component {
+const ContactCard = (props) => {
+	const { link, icon, title, description } = props;
 
-	render() {
-		const { link, icon, title, description } = this.props;
-		return (
-			<div className="card shadow-sm">
-				<div className="card-body">
-					<h5><a href={link} className="plain-link"><FontAwesomeIcon icon={icon} /> {title}</a></h5>
-					<p>{description}</p>
-				</div>
-			</div>
-		);
-	}
-}
+	return (
+		<Card>
+			<Card.Body>
+				<h5><a href={link} className="plain-link"><FontAwesomeIcon icon={icon} /> {title}</a></h5>
+				<p>{description}</p>
+			</Card.Body>
+		</Card>
+	);
+};
 
 export default ContactCard;

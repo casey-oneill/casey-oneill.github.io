@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
-class Footer extends Component {
-	render() {
-		return (
-			<footer className="footer py-5">
-				<div className="container">
-					<div className="text-center">
-						&copy; Casey O'Neill 2022
-					</div>
+const Footer = () => {
+
+	return (
+		<footer className="footer py-3 bg-light">
+			<Container>
+				<div className="text-center">
+					&copy; Casey O'Neill 2022
 				</div>
-			</footer>
-		)
-	}
-}
+			</Container>
+		</footer>
+	);
+};
 
 export default Footer;

@@ -1,27 +1,43 @@
+import React from 'react';
 import { Element } from 'react-scroll';
-import { data } from './data/data';
 import ExperiencesPage from './pages/ExperiencesPage';
 import ContactsPage from './pages/ContactsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import BiographyPage from './pages/BiographyPage';
-import SkillsPage from './pages/SkillsPage';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
 
-function App() {
+const App = () => {
+	const sections = [
+		{
+			id: 'home',
+			component: <BiographyPage />,
+		},
+		{
+			id: 'experience',
+			component: <ExperiencesPage />,
+		},
+		{
+			id: 'projects',
+			component: <ProjectsPage />,
+		},
+		{
+			id: 'contact',
+			component: <ContactsPage />,
+		},
+	];
+
+	const sectionItems = sections.map((section, i) =>
+		<Element id={section.id} key={section.id} name={section.id} className={i % 2 === 0 ? 'py-5' : 'bg-light py-5'}>
+			{section.component}
+		</Element>
+	);
+
 	return (
 		<div className="app">
-			<Element id="home" name="home" className="pt-5">
-				<BiographyPage />
-				<SkillsPage skills={data.skills} />
-			</Element>
-			<Element id="experience" name="experience" className="py-5">
-				<ExperiencesPage experiences={data.experiences} />
-			</Element>
-			<Element id="projects" name="projects" className="bg-light py-5">
-				<ProjectsPage projects={data.projects} />
-			</Element>
-			<Element id="contact" name="contact" className="py-5">
-				<ContactsPage contacts={data.contacts} />
-			</Element>
+			<Header />
+			{sectionItems}
+			<Footer />
 		</div>
 	);
 }

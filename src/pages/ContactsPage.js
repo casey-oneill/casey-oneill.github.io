@@ -1,40 +1,27 @@
-import { Component } from "react";
+import React from "react";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import ContactCard from "../components/ContactCard";
+import { contacts } from "../data/data";
 
-class ContactsPage extends Component {
+const ContactsPage = () => {
+	const contactItems = contacts.map((contact) =>
+		<ContactCard {...contact} />
+	);
 
-	contacts = () => {
-		var contacts = [];
-		this.props.contacts.forEach((e) => {
-			contacts.push(
-				<div className="col-12 mb-5">
-					<ContactCard {...e} />
-				</div>
-			);
-		});
-		return contacts;
-	}
-
-	render() {
-		return (
-			<div className="container">
-				<div className="row">
-					<div className="col-12 col-md-3 mb-4">
-						<div className="row">
-							<div className="col">
-								<h1>Contact</h1>
-							</div>
-						</div>
-					</div>
-					<div className="col-12 col-md-9">
-						<div className="row">
-							{this.contacts()}
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
-}
+	return (
+		<Container>
+			<Row>
+				<Col xs={12} lg={3} className="mb-3">
+					<h1>Contact</h1>
+				</Col>
+				<Col xs={12} lg={9}>
+					<Stack gap={3}>
+						{contactItems}
+					</Stack>
+				</Col>
+			</Row>
+		</Container>
+	);
+};
 
 export default ContactsPage;
