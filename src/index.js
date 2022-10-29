@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/js/src/collapse'; // required for navbar collapse
-import 'bootswatch/dist/cosmo/bootstrap.min.css';
+import 'bootswatch/dist/zephyr/bootstrap.min.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

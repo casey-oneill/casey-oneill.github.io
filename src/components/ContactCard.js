@@ -8,7 +8,7 @@ const ContactCard = (props) => {
 	return (
 		<Card>
 			<Card.Body>
-				<h5><a href={link} className="plain-link"><FontAwesomeIcon icon={icon} /> {title}</a></h5>
+				<h5><a href={link}><FontAwesomeIcon icon={icon} /> {title}</a></h5>
 				<p>{description}</p>
 			</Card.Body>
 		</Card>
