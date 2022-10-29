@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
-	const offset = -56;
+	const offset = -67;
 
 	const toggleOpen = () => {
 		// If viewport width is less than Bootstrap 'md' breakpoint, toggle navbar expanded
