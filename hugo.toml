@@ -1,0 +1,4 @@
+baseURL = "https://casey-oneill.github.io/"
+languageCode = "en-ca"
+title = "Casey O'Neill"
+theme = "paper"
