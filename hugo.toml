@@ -1,4 +1,55 @@
 baseURL = "https://casey-oneill.github.io/"
-languageCode = "en-ca"
-title = "Casey O'Neill"
+author = "Casey O'Neill"
+copyright = "Copyright © 2024, Casey O'Neill; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+# ------------------------------
 theme = "paper"
+title = "Casey O'Neill"
+
+[params]
+  color = 'linen'
+
+  github = 'casey-oneill'
+  linkedin = 'caseyoneill'
+
+  avatar = 'casey.oneill@uwaterloo.ca'
+  name = 'Casey'
+  bio = 'Discover fresh context'
+# ------------------------------
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
