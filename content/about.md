@@ -6,20 +6,10 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "lee.so"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I'm a M.Math graduate student studying Human-Computer Interaction (HCI) at the [University of Waterloo](https://uwaterloo.ca), Ontario, Canada. I'm supervised by [Dr. Edith Law](https://edithlaw.ca). I've also worked with [Dr. Daniel Rea](https://ca.linkedin.com/in/daniel-rea-94279a47) during my undergraduate studies at UNB. My thesis explores how we interact with artifical agents such as robots and chatbots.
 
-Hugo makes use of a variety of open source projects including:
+I grew up on a dairy farm in rural New Brunswick. In 2023, I graduated from the [University of New Brunswick](https://www.unb.ca) with a Bachelor of Computer Science and a Bachelor of Arts in Philosophy. My love of learning and interest in UI/UX development and video games led me to pursue a master's in HCI.
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+I'm a coding enthusiast, and I work on projects like video games and websites in my spare time. When I'm not coding, you can find me playing video games or taking long walks. I'm also a music enthusiast! I made this playlist to share my favourite songs with you.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6sQg6TuLp3WXulnJXKt0KT?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

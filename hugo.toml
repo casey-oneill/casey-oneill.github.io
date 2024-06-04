@@ -11,45 +11,57 @@ theme = "paper"
 title = "Casey O'Neill"
 
 [params]
-  color = 'linen'
+color = 'linen'
 
-  github = 'casey-oneill'
-  linkedin = 'caseyoneill'
+github = 'casey-oneill'
+linkedin = 'caseyoneill'
 
-  avatar = 'casey.oneill@uwaterloo.ca'
-  name = 'Casey'
-  bio = 'Discover fresh context'
+avatar = '/images/Profile.png'
+name = "Hi, I'm Casey!"
+bio = "I'm a Human-Computer Interaction graduate student at the University of Waterloo. This is my personal website, where you can find information about me and read my blog posts."
+
+monoDarkIcon = true
 # ------------------------------
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 10
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+[[menu.main]]
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
+weight = 10
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 10
+[[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv/"
+weight = 10
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
+category = "categories"
+tag = "tags"
+series = "series"
 
 [privacy]
 
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+[privacy.vimeo]
+disabled = false
+simple = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
