@@ -6,12 +6,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    colors: {
+      primary: "#B5838D",
+      secondary: "#6D6875",
+      accent: "#E05438",
+      light: "#FFF5EA",
+      dark: "#3F3C46",
     },
+    fontFamily: {
+      display: ["Playfair Display"],
+      body: ["Lora"],
+    },
+    extend: {},
   },
   plugins: [],
 };

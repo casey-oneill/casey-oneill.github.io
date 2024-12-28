@@ -1,4 +1,5 @@
 /** @type {import('prettier').Config} */
 export default {
-  plugins: ["prettier-plugin-tailwindcss"]
+  plugins: ["prettier-plugin-tailwindcss"],
+  printWidth: 150,
 };
