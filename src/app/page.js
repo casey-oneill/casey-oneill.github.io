@@ -3,29 +3,29 @@ import { GitHub, Linkedin, Mail } from "react-feather";
 
 export default function Home() {
   return (
-    <div className="flex gap-10">
-      <div className="flex flex-col content-center">
+    <div className="grid grid-cols-12 gap-4 md:gap-10">
+      <div className="col-span-12 md:col-span-4 flex flex-col content-center">
         <Image
           src="/profile.png"
           alt="Picture of the author"
-          className="rounded-full border border-dark"
-          width={400}
-          height={400}
+          className="rounded-full border border-dark mx-auto"
+          width={200}
+          height={200}
         />
-        <div className="flex justify-center py-4 gap-6">
+        <div className="flex justify-center py-4 gap-4 md:gap-6">
           <a href="mailto:casey.oneill@uwaterloo.ca"><Mail /></a>
           <a href="https://www.linkedin.com/in/caseyoneill" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
           <a href="https://github.com/casey-oneill" target="_blank" rel="noopener noreferrer"><GitHub /></a>
         </div>
       </div>
-      <div className="flex flex-col gap-6">
-        <h1 className="font-display font-black text-5xl">
+      <div className="col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-6">
+        <h1 className="font-display font-black text-2xl md:text-3xl">
           Hi, I'm Casey!
         </h1>
-        <h2 className="font-medium text-2xl">
+        <h2 className="font-medium text-lg md:text-xl">
           I'm a graduate student at the <span className="text-accent">University of Waterloo</span> pursuing a Master of Mathematics in Computer Science with a specialization in <span className="text-accent">Human-Computer Interaction</span>.
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg">
           This follows the completion of my undergraduate degrees from the University of New Brunswick in 2023, where I earned a Bachelor of Computer Science and a Bachelor of Arts with a major in Philosophy.
         </p>
       </div>

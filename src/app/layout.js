@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
       <body className={`${lora.variable} ${playfairDisplay.variable} antialiased bg-accent font-body text-dark`}>
         <div className="flex flex-col h-screen bg-light">
           <Header />
-          <div className="flex-1 px-32">
-            <main>
+          <div className="flex-1 pb-10 w-full bg-light">
+            <main className="px-5 md:px-10 mx-auto container">
               {children}
             </main>
           </div>
