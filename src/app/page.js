@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { GitHub, Linkedin, Mail } from "react-feather";
+import Profile from "@/assets/images/profile.png";
 
 export default function Home() {
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-10">
       <div className="col-span-12 md:col-span-4 flex flex-col content-center">
         <Image
-          src="/profile.png"
-          alt="Picture of the author"
-          className="rounded-full border border-dark mx-auto"
+          src={Profile}
           width={200}
           height={200}
+          alt="Picture of the author"
+          placeholder="blur"
+          className="rounded-full border border-dark mx-auto"
         />
         <div className="flex justify-center py-4 gap-4 md:gap-6">
           <a href="mailto:casey.oneill@uwaterloo.ca"><Mail /></a>
