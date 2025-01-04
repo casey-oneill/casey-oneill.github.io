@@ -1,12 +1,9 @@
-export default function Section({ children, name, subtext }) {
+export default function Section({ children, name }) {
   return (
     <div>
-      <h2 className="font-display font-medium text-xl md:text-2xl">
+      <h2 className="font-display font-medium text-xl">
         {name}
       </h2>
-      <h3>
-        {subtext}
-      </h3>
       <div className="px-6">
         {children}
       </div>

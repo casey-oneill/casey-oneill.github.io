@@ -3,7 +3,7 @@ import { Page } from "@/components/templates";
 import data from "@/data";
 import { useMemo } from "react";
 
-export default function About() {
+export default function Resume() {
   const sections = useMemo(() => ([
     {
       key: "education",
@@ -12,19 +12,17 @@ export default function About() {
           <ul className="list-none">
             {data.resume.education.map((item) => (
               <li key={item.program} className="pt-4">
-                <p className="font-medium text-base md:text-lg text-accent">
+                <p className="font-medium text-accent">
                   {item.date}
                 </p>
-                <p className="font-medium text-base md:text-lg">
+                <p className="font-medium mb-2">
                   {item.institution}
                 </p>
                 <p>
-                  <i>
-                    {item.location}
-                  </i>
-                </p>
-                <p>
                   {item.program}
+                </p>
+                <p className="mb-2">
+                  {item.location}
                 </p>
                 <p>
                   Cumulative GPA: {item.cgpa}
@@ -42,16 +40,17 @@ export default function About() {
           <ul className="list-none">
             {data.resume.experience.map((item) => (
               <li key={item.program} className="pt-4">
-                <p className="font-medium text-base md:text-lg text-accent">
+                <p className="font-medium text-accent">
                   {item.date}
                 </p>
-                <p className="font-medium text-base md:text-lg">
-                  {item.position} at {item.company}
+                <p className="font-medium mb-2">
+                  {item.position}
                 </p>
                 <p>
-                  <i>
-                    {item.location}
-                  </i>
+                  {item.company}
+                </p>
+                <p className="mb-2">
+                  {item.location}
                 </p>
               </li>
             ))}

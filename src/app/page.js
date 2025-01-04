@@ -19,13 +19,13 @@ export default function Home() {
         </div>
       </div>
       <div className="col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-6">
-        <h1 className="font-display font-black text-2xl md:text-3xl">
+        <h1 className="font-display font-black text-2xl">
           Hi, I'm Casey!
         </h1>
-        <h2 className="font-medium text-lg md:text-xl">
+        <h2 className="font-medium text-lg">
           I'm a graduate student at the <span className="text-accent">University of Waterloo</span> pursuing a Master of Mathematics in Computer Science with a specialization in <span className="text-accent">Human-Computer Interaction</span>.
         </h2>
-        <p className="text-base md:text-lg">
+        <p className="text-base">
           This follows the completion of my undergraduate degrees from the University of New Brunswick in 2023, where I earned a Bachelor of Computer Science and a Bachelor of Arts with a major in Philosophy.
         </p>
       </div>

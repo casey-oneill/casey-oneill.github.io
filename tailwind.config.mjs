@@ -18,12 +18,10 @@ export default {
       body: ["Lora"],
     },
     fontSize: {
-      sm: "0.875rem",
       base: "1rem",
       lg: "1.25rem",
       "xl": "1.5rem",
       "2xl": "2.125rem",
-      "3xl": "3.5rem",
     },
     fontWeight: {
       normal: "400",
