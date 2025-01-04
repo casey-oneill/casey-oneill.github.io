@@ -1,6 +1,6 @@
 import { Lora, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { Footer, Header } from "@/components";
+import { Footer, Header } from "@/components/organisms";
 
 const lora = Lora({
   variable: "--font-lora",

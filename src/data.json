@@ -2,22 +2,57 @@
   "resume": {
     "education": [
       {
-        "institution": "University of Waterloo (Expected 2025)",
+        "institution": "University of Waterloo",
         "location": "Waterloo, ON",
         "program": "Master of Mathematics in Computer Science",
+        "date": "Expected 2025",
         "cgpa": "97.25"
       },
       {
-        "institution": "University of New Brunswick (2023)",
+        "institution": "University of New Brunswick",
         "location": "Fredericton, NB",
         "program": "Bachelor of Computer Science with Honours",
+        "date": "2023",
         "cgpa": "4.2"
       },
       {
-        "institution": "University of New Brunswick (2023)",
+        "institution": "University of New Brunswick",
         "location": "Fredericton, NB",
         "program": "Bachelor of Arts with a Major in Philosophy",
+        "date": "2023",
         "cgpa": "4.2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "VeroSource Solutions",
+        "location": "Remote",
+        "position": "Software Developer",
+        "date": "2022 - Present"
+      },
+      {
+        "company": "University of New Brunswick Human-Computer Interaction Lab",
+        "location": "Fredericton, NB",
+        "position": "Research Assistant",
+        "date": "2022"
+      },
+      {
+        "company": "VeroSource Solutions",
+        "location": "Fredericton, NB",
+        "position": "Co-op Software Developer",
+        "date": "2021"
+      },
+      {
+        "company": "Innovatia",
+        "location": "Remote",
+        "position": "Co-op Software Developer",
+        "date": "2020"
+      },
+      {
+        "company": "Populus Global Solutions",
+        "location": "Fredericton, NB",
+        "position": "Co-op Software Developer",
+        "date": "2019-2020"
       }
     ]
   }
