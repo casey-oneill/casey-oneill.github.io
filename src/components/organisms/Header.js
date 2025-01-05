@@ -8,10 +8,10 @@ import { Menu, X } from "react-feather";
 export default function Header() {
   const pathname = usePathname();
   const items = [
-    { name: 'About Me', path: '/' },
+    { name: 'Home', path: '/' },
+    { name: 'About Me', path: '/about' },
     { name: 'Resume', path: '/resume' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
   ];
   const [visible, setVisible] = useState(false);
   const toggleVisible = useCallback(() => setVisible(!visible), [visible]);

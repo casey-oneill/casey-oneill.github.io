@@ -9,9 +9,9 @@ export default function Resume() {
       key: "education",
       component: (
         <Section name="Education">
-          <ul className="list-none">
+          <div className="grid grid-cols-1 gap-4">
             {data.resume.education.map((item) => (
-              <li key={item.program} className="pt-4">
+              <div key={item.program}>
                 <p className="font-medium text-accent">
                   {item.date}
                 </p>
@@ -27,9 +27,9 @@ export default function Resume() {
                 <p>
                   Cumulative GPA: {item.cgpa}
                 </p>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </Section>
       ),
     },
@@ -37,9 +37,9 @@ export default function Resume() {
       key: "experience",
       component: (
         <Section name="Work Experience">
-          <ul className="list-none">
+          <div className="grid grid-cols-1 gap-4">
             {data.resume.experience.map((item) => (
-              <li key={item.program} className="pt-4">
+              <div key={`${item.date}-${item.company}-${item.position}`}>
                 <p className="font-medium text-accent">
                   {item.date}
                 </p>
@@ -52,9 +52,9 @@ export default function Resume() {
                 <p className="mb-2">
                   {item.location}
                 </p>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </Section>
       ),
     },

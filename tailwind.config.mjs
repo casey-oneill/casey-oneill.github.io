@@ -26,7 +26,7 @@ export default {
     fontWeight: {
       normal: "400",
       medium: "500",
-      black: "900",
+      bold: "700",
     },
     extend: {},
   },
