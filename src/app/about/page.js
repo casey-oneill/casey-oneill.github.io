@@ -9,7 +9,7 @@ export default function About() {
       component: (
         <Section name="Biography">
           <div className="grid grid-cols-1 gap-4">
-            <p>I'm a second-year master's student at the University of Waterloo. I'm currently completing my master's thesis in addition to working part-time as a software developer.</p>
+            <p>I'm a second-year master's student at the University of Waterloo. I'm currently completing my master's thesis in addition to working part-time as a software developer for VeroSource Solutions.</p>
             <p>My research interests include Human-Computer Interaction, Human-Robot Interaction, and video games. My thesis focuses on how voice agents...</p>
           </div>
         </Section>

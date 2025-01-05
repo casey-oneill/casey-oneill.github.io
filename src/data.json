@@ -55,5 +55,43 @@
         "date": "2019 - 2020"
       }
     ]
+  },
+  "projects": {
+    "software": [
+      {
+        "name": "MyHealthNB",
+        "date": "Ongoing",
+        "repository": "",
+        "description": "MyHealthNB provides digital access to personal healthcare records. With my company, VeroSource Solutions, I work to develop both the MyHealthNB web and native mobile applications. Photo from VeroSource solutions website."
+      },
+      {
+        "name": "Portfolio",
+        "date": "2025",
+        "repository": "https://github.com/casey-oneill/casey-oneill.github.io",
+        "description": "A personal website developed from scratch using React with NextJS and Tailwind CSS. Hosted using GitHub pages."
+      },
+      {
+        "name": "Life Transition Journal",
+        "date": "2024",
+        "repository": "",
+        "description": "Life Transition Journal is a virtual task-based diary application to help users track what is important to them as they experience their first winter in Canada. Built for a University of Waterloo field study using React Native with Expo and deployed for iOS and Android devices using EAS. Back-end services built with PostgreSQL and Node.js."
+      }
+    ],
+    "research": [
+      {
+        "name": "\"Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence\"",
+        "date": "2024",
+        "repository": "https://github.com/casey-oneill/naoqi-wizard-interface",
+        "download": "",
+        "description": "Final project for University of Waterloo course ECE750 (Social Robotics). A survey study in which participants (n = 16) evaluated videos of a NAO robot. Included both a qualitative and quantitative data analysis."
+      },
+      {
+        "name": "\"Using an Augmented Reality Exercise Game to Improve Exercise Experiences\"",
+        "date": "2024",
+        "repository": "https://github.com/casey-oneill/hololens-exercise-demo",
+        "download": "",
+        "description": "Final project for University of Waterloo course CS889 (Research Methods in HCI) completed with Aswad Tariq. An experiment study (n = 10) to evaluate if our gamified augmented reality system can improve user experiences of in-place exercises. Included both a qualitative and quantitative data analysis."
+      }
+    ]
   }
 }
