@@ -12,7 +12,7 @@ export default function Home() {
           height={200}
           alt="Picture of the author"
           placeholder="blur"
-          className="rounded-full border border-dark mx-auto"
+          className="rounded-full border border-dark dark:border-light mx-auto"
         />
         <div className="flex justify-center py-4 gap-4 md:gap-6">
           <a href="mailto:casey.oneill@uwaterloo.ca"><Mail /></a>
