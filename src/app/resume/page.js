@@ -52,6 +52,9 @@ export default function Resume() {
                 <p className="mb-2">
                   {item.location}
                 </p>
+                <p>
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
