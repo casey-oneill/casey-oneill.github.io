@@ -1,3 +1,5 @@
+"use client"
+
 import { useTheme } from "next-themes";
 import { useCallback, useEffect, useState } from "react";
 import { Moon, Sun } from "react-feather";
@@ -23,4 +25,4 @@ export default function ThemeSwitch() {
       {theme === "light" ? <Moon /> : <Sun />}
     </button>
   );
-};
+}

@@ -35,9 +35,9 @@ export default function Header() {
           <button type="button" onClick={toggleVisible} className="block md:hidden">
             {visible ? <X /> : <Menu />}
           </button>
-          <div id="navbar-default" className="hidden md:flex content-center">
+          <div className="hidden md:flex content-center">
             {items.map((item) => (
-              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent h-fit my-auto px-3`}>
+              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent transition-colors h-fit my-auto px-3 font-medium uppercase`}>
                 {item.name}
               </Link>
             ))}
@@ -45,9 +45,9 @@ export default function Header() {
           <ThemeSwitch />
         </div>
         {visible && (
-          <div id="navbar-default" className="absolute left-0 bottom-0 top-24 w-screen px-5 bg-light dark:bg-dark z-50 flex flex-col gap-4 pb-4">
+          <div className="absolute left-0 bottom-0 top-24 w-screen px-5 bg-light dark:bg-dark z-50 flex flex-col gap-4 pb-4">
             {items.map((item) => (
-              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent text-lg text-center`}>
+              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent transition-colors font-medium text-lg text-center uppercase`}>
                 {item.name}
               </Link>
             ))}

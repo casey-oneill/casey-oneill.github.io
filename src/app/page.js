@@ -1,8 +1,14 @@
-import Image from "next/image";
-import { GitHub, Linkedin, Mail } from "react-feather";
+"use client"
+
 import Profile from "@/assets/images/profile.png";
+import { Button } from "@/components/atoms";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { GitHub, Linkedin, Mail } from "react-feather";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-10">
       <div className="col-span-12 md:col-span-4 flex flex-col content-center">
@@ -30,6 +36,14 @@ export default function Home() {
         <p className="text-base">
           This follows the completion of my undergraduate degrees from the University of New Brunswick in 2023, where I earned a Bachelor of Computer Science and a Bachelor of Arts with a major in Philosophy.
         </p>
+        <div className="flex gap-2">
+          <Button onClick={() => router.push("/resume")}>
+            Resume
+          </Button>
+          <Button onClick={() => router.push("/projects")} variant="secondary">
+            Projects
+          </Button>
+        </div>
       </div>
     </div>
   );
