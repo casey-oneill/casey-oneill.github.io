@@ -19,7 +19,7 @@ export default function Projects() {
                   width={200}
                   height={200}
                   alt={item.name}
-                  className="col-span-1 md:col-span-3 bg-primary w-full rounded-lg border border-secondary dark:border-primary"
+                  className="col-span-1 md:col-span-3 bg-primary w-full rounded-lg border-2 border-secondary dark:border-primary"
                 />
                 <div key={item.name} className="col-span-1 md:col-span-9">
                   <p className="font-medium text-accent">
