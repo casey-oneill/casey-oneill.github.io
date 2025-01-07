@@ -1,0 +1,107 @@
+{
+  "resume": {
+    "education": [
+      {
+        "institution": "University of Waterloo",
+        "location": "Waterloo, ON",
+        "program": "Master of Mathematics in Computer Science",
+        "date": "Expected 2025",
+        "cgpa": "97.25"
+      },
+      {
+        "institution": "University of New Brunswick",
+        "location": "Fredericton, NB",
+        "program": "Bachelor of Computer Science with Honours",
+        "date": "2023",
+        "cgpa": "4.2"
+      },
+      {
+        "institution": "University of New Brunswick",
+        "location": "Fredericton, NB",
+        "program": "Bachelor of Arts with a Major in Philosophy",
+        "date": "2023",
+        "cgpa": "4.2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "VeroSource Solutions",
+        "location": "Remote",
+        "position": "Software Developer",
+        "date": "2022 - Present",
+        "description": "Developed company software using ReactJS, React Native, and Spring Boot frameworks."
+      },
+      {
+        "company": "University of New Brunswick Human-Computer Interaction Lab",
+        "location": "Fredericton, NB",
+        "position": "Research Assistant",
+        "date": "2022",
+        "description": "Designed, prepared, and ran pilot studies for a user study with a modified Roomba robot."
+      },
+      {
+        "company": "VeroSource Solutions",
+        "location": "Fredericton, NB",
+        "position": "Co-op Software Developer",
+        "date": "2021",
+        "description": "Worked in an Agile environment to develop web applications using React, Bootstrap, Spring Boot, and Java Server Faces."
+      },
+      {
+        "company": "Innovatia",
+        "location": "Remote",
+        "position": "Co-op Software Developer",
+        "date": "2020",
+        "description": "Worked as a full-stack web developer to implement new features and bug fixes for an ASP.NET web application."
+      },
+      {
+        "company": "Populus Global Solutions",
+        "location": "Fredericton, NB",
+        "position": "Co-op Software Developer",
+        "date": "2019 - 2020",
+        "description": "Worked in an Agile environment to develop monolithic application using Spring Boot and Struts."
+      }
+    ]
+  },
+  "projects": {
+    "software": [
+      {
+        "name": "MyHealthNB",
+        "date": "Ongoing",
+        "image": "/images/myhealth-nb.png",
+        "repository": "",
+        "description": "MyHealthNB provides digital access to personal healthcare records. With my company, VeroSource Solutions, I work to develop both the MyHealthNB web and native mobile applications. Images from MyHealthNB App Store preview."
+      },
+      {
+        "name": "Portfolio",
+        "date": "2025",
+        "image": "/images/portfolio.png",
+        "repository": "https://github.com/casey-oneill/casey-oneill.github.io",
+        "description": "A personal website developed from scratch using React with NextJS and Tailwind CSS. Hosted using GitHub pages."
+      },
+      {
+        "name": "Life Transition Journal",
+        "date": "2024",
+        "image": "/images/life-transition-journal.png",
+        "repository": "",
+        "description": "Life Transition Journal is a virtual task-based diary application to help users track what is important to them as they experience their first winter in Canada. Built for a University of Waterloo field study using React Native with Expo and deployed for iOS and Android devices using EAS. Back-end services built with PostgreSQL and Node.js."
+      }
+    ],
+    "research": [
+      {
+        "name": "\"Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence\"",
+        "date": "2024",
+        "repository": "https://github.com/casey-oneill/naoqi-wizard-interface",
+        "file": "/files/social-robotics_2024.pdf",
+        "filename": "social-robotics_2024.pdf",
+        "description": "Final project for University of Waterloo course ECE750 (Social Robotics). A survey study in which participants (n = 16) evaluated videos of a NAO robot. Included both a qualitative and quantitative data analysis. Robot behaviours programmed using NAOqi Python API and Choregraphe software."
+      },
+      {
+        "name": "\"Using an Augmented Reality Exercise Game to Improve Exercise Experiences\"",
+        "date": "2024",
+        "repository": "https://github.com/casey-oneill/hololens-exercise-demo",
+        "file": "/files/research-methods-hci_2024.pdf",
+        "filename": "research-methods-hci_2024.pdf",
+        "description": "Final project for University of Waterloo course CS889 (Research Methods in HCI) completed with Aswad Tariq. An experiment study (n = 10) to evaluate if our gamified augmented reality system can improve user experiences of in-place exercises. Included both a qualitative and quantitative data analysis. Prototype created for Microsoft HoloLens 2 using Unity engine."
+      }
+    ]
+  }
+}
