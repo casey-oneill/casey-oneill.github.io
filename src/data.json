@@ -6,28 +6,28 @@
         "location": "Waterloo, ON",
         "program": "Master of Mathematics in Computer Science",
         "date": "Expected 2025",
-        "cgpa": "97.25"
+        "cgpa": "97.25/100"
       },
       {
         "institution": "University of New Brunswick",
         "location": "Fredericton, NB",
         "program": "Bachelor of Computer Science with Honours",
         "date": "2023",
-        "cgpa": "4.2"
+        "cgpa": "4.2/4.3"
       },
       {
         "institution": "University of New Brunswick",
         "location": "Fredericton, NB",
         "program": "Bachelor of Arts with a Major in Philosophy",
         "date": "2023",
-        "cgpa": "4.2"
+        "cgpa": "4.2/4.3"
       }
     ],
     "experience": [
       {
         "company": "VeroSource Solutions",
-        "location": "Remote",
-        "position": "Software Developer",
+        "location": "Fredericton, NB (Remote)",
+        "position": "Part-Time Software Developer",
         "date": "2022 - Present",
         "description": "Developed company software using ReactJS, React Native, and Spring Boot frameworks."
       },
@@ -36,71 +36,53 @@
         "location": "Fredericton, NB",
         "position": "Research Assistant",
         "date": "2022",
-        "description": "Designed, prepared, and ran pilot studies for a user study with a modified Roomba robot."
+        "description": "Designed, prepared, and ran informal pilot studies for a user study with a modified Roomba robot."
       },
       {
         "company": "VeroSource Solutions",
         "location": "Fredericton, NB",
         "position": "Co-op Software Developer",
         "date": "2021",
-        "description": "Worked in an Agile environment to develop web applications using React, Bootstrap, Spring Boot, and Java Server Faces."
+        "description": "Worked in an Agile environment to develop web applications using React, Spring Boot, and Java Server Faces."
       },
       {
         "company": "Innovatia",
-        "location": "Remote",
+        "location": "Saint John, NB (Remote)",
         "position": "Co-op Software Developer",
         "date": "2020",
-        "description": "Worked as a full-stack web developer to implement new features and bug fixes for an ASP.NET web application."
+        "description": "Worked as a full stack web developer to implement new features and bug fixes for an ASP.NET web application."
       },
       {
         "company": "Populus Global Solutions",
         "location": "Fredericton, NB",
         "position": "Co-op Software Developer",
         "date": "2019 - 2020",
-        "description": "Worked in an Agile environment to develop monolithic application using Spring Boot and Struts."
+        "description": "Worked in an Agile environment to develop a monolithic application using Spring Boot and Struts."
       }
     ]
   },
   "projects": {
-    "software": [
+    "publications": [
       {
-        "name": "MyHealthNB",
-        "date": "Ongoing",
-        "image": "/images/myhealth-nb.png",
-        "repository": "",
-        "description": "MyHealthNB provides digital access to personal healthcare records. With my company, VeroSource Solutions, I work to develop both the MyHealthNB web and native mobile applications. Images from MyHealthNB App Store preview."
-      },
-      {
-        "name": "Portfolio",
-        "date": "2025",
-        "image": "/images/portfolio.png",
-        "repository": "https://github.com/casey-oneill/casey-oneill.github.io",
-        "description": "A personal website developed from scratch using React with NextJS and Tailwind CSS. Hosted using GitHub pages."
-      },
-      {
-        "name": "Life Transition Journal",
-        "date": "2024",
-        "image": "/images/life-transition-journal.png",
-        "repository": "",
-        "description": "Life Transition Journal is a virtual task-based diary application to help users track what is important to them as they experience their first winter in Canada. Built for a University of Waterloo field study using React Native with Expo and deployed for iOS and Android devices using EAS. Back-end services built with PostgreSQL and Node.js."
+        "title": "LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition",
+        "publication": "To appear in CSCW 2025",
+        "authors": "Nabil Bin Hannan, Casey O'Neill, Anthony Maocheia-Ricci and Edith Law"
       }
     ],
-    "research": [
+    "coursework": [
       {
-        "name": "\"Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence\"",
-        "date": "2024",
-        "repository": "https://github.com/casey-oneill/naoqi-wizard-interface",
+        "title": "Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence",
+        "course": "ECE750 (Social Robotics), University of Waterloo, 2024",
         "file": "/files/social-robotics_2024.pdf",
         "filename": "social-robotics_2024.pdf",
-        "description": "Final project for University of Waterloo course ECE750 (Social Robotics). A survey study in which participants (n = 16) evaluated videos of a NAO robot. Included both a qualitative and quantitative data analysis. Robot behaviours programmed using NAOqi Python API and Choregraphe software."
+        "authors": "Casey O'Neill"
       },
       {
-        "name": "\"Using an Augmented Reality Exercise Game to Improve Exercise Experiences\"",
-        "date": "2024",
-        "repository": "https://github.com/casey-oneill/hololens-exercise-demo",
+        "title": "Using an Augmented Reality Exercise Game to Improve Exercise Experience",
+        "course": "CS889 (Research Methods in HCI), University of Waterloo, 2024",
         "file": "/files/research-methods-hci_2024.pdf",
         "filename": "research-methods-hci_2024.pdf",
-        "description": "Final project for University of Waterloo course CS889 (Research Methods in HCI) completed with Aswad Tariq. An experiment study (n = 10) to evaluate if our gamified augmented reality system can improve user experiences of in-place exercises. Included both a qualitative and quantitative data analysis. Prototype created for Microsoft HoloLens 2 using Unity engine."
+        "authors": "Casey O'Neill and Aswad Tariq"
       }
     ]
   }

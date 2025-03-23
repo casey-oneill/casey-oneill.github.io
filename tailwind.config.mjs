@@ -5,7 +5,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "selector",
+  darkMode: "class",
   theme: {
     colors: {
       primary: "#B5838D",

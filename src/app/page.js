@@ -23,7 +23,6 @@ export default function Home() {
         <div className="flex justify-center py-4 gap-4 md:gap-6">
           <a href="mailto:casey.oneill@uwaterloo.ca"><Mail /></a>
           <a href="https://www.linkedin.com/in/caseyoneill" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
-          <a href="https://github.com/casey-oneill" target="_blank" rel="noopener noreferrer"><GitHub /></a>
         </div>
       </div>
       <div className="col-span-12 md:col-span-8 flex flex-col gap-4 md:gap-6">
@@ -34,7 +33,7 @@ export default function Home() {
           I'm a graduate student at the <span className="text-accent">University of Waterloo</span> pursuing a Master of Mathematics in Computer Science with a specialization in <span className="text-accent">Human-Computer Interaction</span>.
         </h2>
         <p className="text-base">
-          This follows the completion of my undergraduate degrees from the University of New Brunswick in 2023, where I earned a Bachelor of Computer Science and a Bachelor of Arts with a major in Philosophy.
+          This follows the completion of my undergraduate studies at the University of New Brunswick, where I graduated in 2023 with a Bachelor of Computer Science and a Bachelor of Arts with a Major in Philosophy.
         </p>
         <div className="flex gap-2">
           <Button onClick={() => router.push("/resume")}>
