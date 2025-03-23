@@ -14,7 +14,7 @@ export default function Header() {
     { name: 'Resume', path: '/resume' },
     { name: 'Projects', path: '/projects' },
   ];
-  
+
   const [visible, setVisible] = useState(false);
   const toggleVisible = useCallback(() => setVisible(!visible), [visible]);
   useEffect(() => {
