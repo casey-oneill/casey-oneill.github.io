@@ -19,7 +19,7 @@ export default function ThemeSwitch() {
 
   return (
     <button type="button" onClick={() => setTheme(currentTheme === 'dark' ? 'light' : 'dark')}>
-      {theme === "light" ? <Moon /> : <Sun />}
+      {currentTheme === "light" ? <Moon /> : <Sun />}
     </button>
   );
 }
