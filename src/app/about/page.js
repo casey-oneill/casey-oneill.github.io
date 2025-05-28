@@ -25,8 +25,7 @@ export default function About() {
       component: (
         <Section name="Hobbies">
           <div className="grid grid-cols-1 gap-4">
-            <p>In my free time, I enjoy reading, hiking, and games of all types - from recreational sports to video games to trivia with friends. I also love listening to and sharing music. Below, you can find a playlist of my favourite work-friendly songs.</p>
-            <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/playlist/6sQg6TuLp3WXulnJXKt0KT?utm_source=generator&theme=0" width="100%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p>In my free time, I enjoy reading, hiking, and games of all types - from recreational sports to video games to trivia with friends.</p>
           </div>
         </Section>
       ),
