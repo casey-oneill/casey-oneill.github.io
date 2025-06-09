@@ -23,7 +23,7 @@ export default function Projects() {
           <p className="mb-2">
             We are recruiting participants for a user study on the use of voice agents as running coaches. Participation includes:
           </p>
-          <ol class="list-decimal list-inside ml-4 mb-2">
+          <ol className="list-decimal list-inside ml-4 mb-2">
             <li>1-hour in-person session to fill out a demographics survey, install the system onto your device, and complete a training session with the system.</li>
             <li>3-week period in which you will complete at least 6 running sessions.</li>
             <li>1-hour in-person debriefing session to share your experience.</li>
@@ -34,7 +34,7 @@ export default function Projects() {
           <p className="mb-2">
             Basic eligibility criteria include:
           </p>
-          <ul class="list-disc list-inside ml-4 mb-2">
+          <ul className="list-disc list-inside ml-4 mb-2">
             <li>You are over 18.</li>
             <li>You are comfortable exercising (a mix of running and walking) outdoors for at least 12 minutes without stopping.</li>
             <li>You own a smartphone and headphones, and can stream and listen to audio during your outdoor runs.</li>
@@ -43,18 +43,18 @@ export default function Projects() {
             If you are interested, please fill out this short sign-up form to help us assess if you qualify for our study: <Link href="https://uwaterloo.ca1.qualtrics.com/jfe/form/SV_ac7yyXH68pHM6SW">click here to view the sign-up form</Link>. If you are eligible, we will reach out to schedule a time. If you have any questions, please contact the student investigator by email at (casey.oneill@uwaterloo.ca).
           </p>
           <p className="mb-2">
-            This study has been reviewed and received ethics clearance by the University of Waterloo Research Ethics Committee (ORE#46929).
+            This study has been reviewed and received ethics clearance by the University of Waterloo Research Ethics Committee (ORE#46929) and by the University of New Brunswick Research Ethics Board (REB#2025-077).
           </p>
           <p className="mb-2">
             For more information:
           </p>
-          <ul class="list-disc list-inside ml-4">
+          <ul className="list-disc list-inside ml-4">
             <li>Edith Law (Principal Investigator)</li>
-            <li class="list-none pl-4">edith.law@uwaterloo.ca</li>
+            <li className="list-none pl-4">edith.law@uwaterloo.ca</li>
             <li>Casey O'Neill (Student Investigator)</li>
-            <li class="list-none pl-4">casey.oneill@uwaterloo.ca</li>
+            <li className="list-none pl-4">casey.oneill@uwaterloo.ca</li>
             <li>Scott Bateman (Co-Investigator)</li>
-            <li class="list-none pl-4">scottb@unb.ca</li>
+            <li className="list-none pl-4">scottb@unb.ca</li>
           </ul>
         </Section>
       ),
