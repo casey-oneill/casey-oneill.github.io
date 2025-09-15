@@ -1,14 +1,13 @@
 "use client";
 
 import Profile from "@/assets/images/profile.png";
-import { Button, Link } from "@/components/atoms";
+import { Link } from "@/components/atoms";
+import { Section } from "@/components/molecules";
+import data from "@/data";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { GitHub, Linkedin, Mail } from "react-feather";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-10">
       <div className="col-span-12 flex flex-col content-center md:col-span-4">
@@ -40,16 +39,26 @@ export default function Home() {
         </h2>
         <p className="text-base">
           I completed my undergraduate studies at the University of New Brunswick, where I earned a Bachelor of Computer Science with Honours,
-          supervised by <Link href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Daniel Rea</Link>, and a Bachelor of Arts with a Major in
-          Philosophy.
+          supervised by <Link href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Daniel Rea</Link>, and a Bachelor of Arts in Philosophy.
         </p>
-        <p>My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots.</p>
-        <div className="flex gap-2">
-          <Button onClick={() => router.push("/resume")}>Resume</Button>
-          <Button onClick={() => router.push("/research")} variant="secondary">
-            Research
-          </Button>
-        </div>
+        <p>
+          My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots. See my{" "}
+          <Link href="/research" internal>
+            research page
+          </Link>{" "}
+          for more.
+        </p>
+      </div>
+      <div className="col-span-12">
+        <Section name="News">
+          <div className="grid grid-cols-1 gap-4">
+            {data.news.map((item) => (
+              <p key={item.key}>
+                <b className="font-medium">{item.date}:</b> {item.content}
+              </p>
+            ))}
+          </div>
+        </Section>
       </div>
     </div>
   );
