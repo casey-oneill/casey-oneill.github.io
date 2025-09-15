@@ -33,7 +33,7 @@ export default function Home() {
         <h1 className="font-display text-2xl font-bold">Hi, I'm Casey!</h1>
         <h2 className="font-medium">
           I'm a second-year master's student in <span className="text-accent">Human-Computer Interaction</span> at the{" "}
-          <span className="text-accent">University of Waterloo</span>, supervised by <Link href="https://edithlaw.ca/index.html">Edith Law</Link>.
+          <span className="text-accent">University of Waterloo</span>, supervised by <Link href="https://edithlaw.ca/bio.html">Edith Law</Link>.
         </h2>
         <p className="text-base">
           I completed my undergraduate studies at the University of New Brunswick, where I earned a Bachelor of Computer Science with Honours,
