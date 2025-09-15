@@ -1,6 +1,6 @@
-export default function Link({ children, ...props }) {
+export default function Link({ children, internal, ...props }) {
   return (
-    <a {...props} target="_blank" className="text-accent hover:underline">
+    <a {...props} target={internal ? null : "_blank"} className="text-accent hover:underline">
       {children}
     </a>
   );

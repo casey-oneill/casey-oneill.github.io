@@ -1,4 +1,36 @@
 {
+  "news": [
+    {
+      "key": "ro-man-25",
+      "content": "Presented our paper on neurotic robots at IEEE RO-MAN in Eindhoven, the Netherlands.",
+      "date": "August 2025"
+    },
+    {
+      "key": "cscw-25",
+      "content": "Our paper on a digital journaling tool to support newcomers was accepted to ACM CSCW 2025.",
+      "date": "February 2025"
+    },
+    {
+      "key": "mmath",
+      "content": "Started MMath in CS at UWaterloo, supervised by Edith Law.",
+      "date": "September 2023"
+    },
+    {
+      "key": "unb",
+      "content": "Graduated from UNB with a BCS (Honours) and a BA in Philosophy.",
+      "date": "May 2023"
+    },
+    {
+      "key": "nserc-cgsm",
+      "content": "Awarded NSERC Graduate Scholarship (CGS M) at UWaterloo.",
+      "date": "April 2023"
+    },
+    {
+      "key": "nserc-usra",
+      "content": "Awarded NSERC Undergraduate Student Research Award (USRA) at UNB to work with Daniel Rea for the summer.",
+      "date": "April 2022"
+    }
+  ],
   "resume": {
     "education": [
       {
@@ -61,7 +93,7 @@
       }
     ]
   },
-  "projects": {
+  "research": {
     "publications": [
       {
         "title": "LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition",

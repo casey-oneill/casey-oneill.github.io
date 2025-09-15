@@ -5,7 +5,7 @@ import data from "@/data";
 import React, { useMemo } from "react";
 import { Download } from "react-feather";
 
-export default function Projects() {
+export default function Research() {
   const sections = useMemo(
     () => [
       {
@@ -13,7 +13,7 @@ export default function Projects() {
         component: (
           <Section name="Publications">
             <div className="grid grid-cols-1 gap-4">
-              {data.projects.publications.map((item) => (
+              {data.research.publications.map((item) => (
                 <div key={item.name}>
                   <p className="font-medium text-accent">{item.title}</p>
                   <p className="mb-2 font-medium">{item.publication}</p>
@@ -29,7 +29,7 @@ export default function Projects() {
         component: (
           <Section name="Coursework">
             <div className="grid grid-cols-1 gap-4">
-              {data.projects.coursework.map((item) => (
+              {data.research.coursework.map((item) => (
                 <div key={item.name}>
                   <p className="font-medium text-accent">{item.title}</p>
                   <p className="mb-2 font-medium">{item.course}</p>
@@ -47,5 +47,5 @@ export default function Projects() {
     [],
   );
 
-  return <Page name="Projects" sections={sections} />;
+  return <Page name="Research" sections={sections} />;
 }
