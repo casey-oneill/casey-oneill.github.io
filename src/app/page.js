@@ -27,6 +27,9 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/caseyoneill" target="_blank" rel="noopener noreferrer">
             <Linkedin />
           </a>
+          <a href="https://github.com/casey-oneill" target="_blank" rel="noopener noreferrer">
+            <GitHub />
+          </a>
         </div>
       </div>
       <div className="col-span-12 flex flex-col gap-4 md:col-span-8 md:gap-6">
