@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,35 +9,39 @@ import { ThemeSwitch } from "../atoms";
 export default function Header() {
   const pathname = usePathname();
   const items = [
-    { name: 'Home', path: '/' },
-    { name: 'About Me', path: '/about' },
-    { name: 'Resume', path: '/resume' },
-    { name: 'Projects', path: '/projects' },
+    { name: "Home", path: "/" },
+    { name: "About Me", path: "/about" },
+    { name: "Resume", path: "/resume" },
+    { name: "Research", path: "/research" },
   ];
 
   const [visible, setVisible] = useState(false);
   const toggleVisible = useCallback(() => setVisible(!visible), [visible]);
   useEffect(() => {
     if (visible) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
   }, [visible]);
 
   return (
-    <nav className="bg-light dark:bg-dark w-full">
-      <div className="flex justify-between py-6 px-5 md:px-10 mx-auto container">
-        <a href="/" className="font-display font-medium text-2xl">
+    <nav className="w-full bg-light dark:bg-dark">
+      <div className="container mx-auto flex justify-between px-5 py-6 md:px-10">
+        <a href="/" className="font-display text-2xl font-medium">
           Casey O'Neill<span className="text-accent">.</span>
         </a>
         <div className="flex justify-end gap-3">
           <button type="button" onClick={toggleVisible} className="block md:hidden">
             {visible ? <X /> : <Menu />}
           </button>
-          <div className="hidden md:flex content-center">
+          <div className="hidden content-center md:flex">
             {items.map((item) => (
-              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent transition-colors h-fit my-auto px-3 font-medium uppercase`}>
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`${pathname === item.path ? "text-accent" : ""} my-auto h-fit px-3 font-medium uppercase transition-colors hover:text-accent`}
+              >
                 {item.name}
               </Link>
             ))}
@@ -45,9 +49,13 @@ export default function Header() {
           <ThemeSwitch />
         </div>
         {visible && (
-          <div className="absolute left-0 bottom-0 top-24 w-screen px-5 bg-light dark:bg-dark z-50 flex flex-col gap-4 pb-4">
+          <div className="absolute bottom-0 left-0 top-24 z-50 flex w-screen flex-col gap-4 bg-light px-5 pb-4 dark:bg-dark">
             {items.map((item) => (
-              <Link key={item.path} href={item.path} className={`${pathname === item.path ? 'text-accent' : ''} hover:text-accent transition-colors font-medium text-lg text-center uppercase`}>
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`${pathname === item.path ? "text-accent" : ""} text-center text-lg font-medium uppercase transition-colors hover:text-accent`}
+              >
                 {item.name}
               </Link>
             ))}

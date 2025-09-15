@@ -43,8 +43,8 @@ export default function Home() {
         <p>My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots.</p>
         <div className="flex gap-2">
           <Button onClick={() => router.push("/resume")}>Resume</Button>
-          <Button onClick={() => router.push("/projects")} variant="secondary">
-            Projects
+          <Button onClick={() => router.push("/research")} variant="secondary">
+            Research
           </Button>
         </div>
       </div>
