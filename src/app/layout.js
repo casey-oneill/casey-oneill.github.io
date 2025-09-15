@@ -21,14 +21,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${lora.className} ${playfairDisplay.className} antialiased bg-primary font-body`}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Casey O'Neill" />
+      </head>
+      <body className={`${lora.className} ${playfairDisplay.className} bg-primary font-body antialiased`}>
         <ThemeProvider attribute="class">
-          <div className="flex flex-col h-screen text-dark dark:text-light">
+          <div className="flex h-screen flex-col text-dark dark:text-light">
             <Header />
-            <div className="flex-1 pb-10 w-full bg-light dark:bg-dark">
-              <main className="px-5 md:px-10 mx-auto container">
-                {children}
-              </main>
+            <div className="w-full flex-1 bg-light pb-10 dark:bg-dark">
+              <main className="container mx-auto px-5 md:px-10">{children}</main>
             </div>
             <Footer />
           </div>
