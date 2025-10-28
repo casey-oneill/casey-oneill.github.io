@@ -1,5 +1,5 @@
 export default async function (eleventyConfig) {
-  // Configure Eleventy
+  eleventyConfig.addPassthroughCopy("css");
 }
 
 export const config = {
@@ -7,6 +7,5 @@ export const config = {
     input: "content",
     includes: "../_includes",
     data: "../_data",
-    output: "../_output",
   },
 };
