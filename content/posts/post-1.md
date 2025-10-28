@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: August 2025
 ---
 
-My first post goes here...
+I presented our neurotic robots paper "Help Me, I'm Feeling Down!" at IEEE RO-MAN in Eindhoven, the Netherlands.
