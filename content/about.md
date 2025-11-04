@@ -10,4 +10,6 @@ My research interests include Human-Computer Interaction, Human-Robot Interactio
 
 ## Hobbies
 
-In my free time, I enjoy reading, running, and games of all types — from recreational sports to video games to trivia with friends. I also love listening to music and trying to play the guitar. Here are some of my favourite songs to listen to at work.
+In my free time, I enjoy reading, running, and games of all types — from recreational sports to video games to trivia with friends. I also love listening to music and trying to play the guitar. Here are some of my favourite songs.
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6sQg6TuLp3WXulnJXKt0KT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

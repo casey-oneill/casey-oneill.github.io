@@ -2,12 +2,12 @@
 layout: layout.html
 ---
 <h2>Hi, I'm Casey!</h2>
-<p>I'm a second-year master's student in Human-Computer Interaction at the University of Waterloo, supervised by <a href="https://edithlaw.ca/index.html">Edith Law.</a></p>
+<p>I'm a second-year master's student in Human-Computer Interaction at the University of Waterloo, supervised by <a href="https://edithlaw.ca/index.html">Edith Law</a>.</p>
 <p>I completed my undergraduate studies at the University of New Brunswick, where I earned a Bachelor of Computer Science with Honours, supervised by <a href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Daniel Rea</a>, and a Bachelor of Arts in Philosophy.</p>
-<p>My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots. See my research page for more.</p>
+<p>My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots. See my <a href="/research/">research page</a> for more.</p>
 
 <h2>News</h2>
 {% for post in collections.post %}
-  <h3>{{ post.data.title }}</h3>
+  <h6>{{ post.data.title }}</h6>
   <p>{{ post.content }}</p>
 {% endfor %}
