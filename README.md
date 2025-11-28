@@ -1,13 +1,14 @@
-Personal website for Casey O'Neill. This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website
 
-## Prerequisites
+This is my personal website. It uses [GitHub Pages](https://docs.github.com/en/pages) with the following technologies:
 
-- [Node.js](https://nodejs.org/en) with [npm](https://www.npmjs.com) using [nvm](https://github.com/nvm-sh/nvm) to manage version
+- [Eleventy](https://www.11ty.dev) static site generator
+- [Bootswatch](https://bootswatch.com) themes for [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](https://icons.getbootstrap.com)
 
-## Useful Commands
+## Develop
 
-Run the development server:
+Make sure [Node Version Manager](https://github.com/nvm-sh/nvm) is installed before running locally. Use [npm](https://www.npmjs.com) to manage dependencies. To run, use the command: `npm start`.
 
-```bash
-npm run dev
-```
+## Deploy
+
+This project is configured for automatic deployments from the `master` branch using GitHub Actions.
