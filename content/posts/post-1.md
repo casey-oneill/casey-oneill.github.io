@@ -1,5 +1,5 @@
 ---
-title: August 2025
+title: 2022-05-01
 ---
 
-Presented our paper on neurotic robots, "Help Me, I'm Feeling Down!", at IEEE RO-MAN in Eindhoven, the Netherlands.
+**May 2022:** Received an NSERC Undergraduate Student Research Award (USRA) to do research with Daniel Rea for the summer.

@@ -6,6 +6,7 @@
     <title>Casey O'Neill</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/cerulean/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="vh-100 d-flex flex-column">
     <header>
@@ -16,15 +17,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about/">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/resume/">Resume</a>
+                <a class="nav-link" href="/downloads/CONeill_CV.pdf">CV</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/research/">Research</a>
@@ -34,11 +32,11 @@
         </div>
       </nav>
     </header>
-    <main class="container flex-grow-1 py-3">
+    <main class="container flex-grow-1 py-4">
       <h1>{{ title | default: "" }}</h1>
       {{ content }}
     </main>
-    <footer class="container py-3">
+    <footer class="container py-4">
       <p class="text-center">Website by Casey O'Neill © 2025. Powered by <a href="https://www.11ty.dev">11ty</a> and <a href="https://bootswatch.com">Bootswatch</a>.</p>
     </footer>
 

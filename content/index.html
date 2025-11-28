@@ -1,13 +1,33 @@
 ---
 layout: layout.html
 ---
-<h2>Hi, I'm Casey!</h2>
-<p>I'm a second-year master's student in Human-Computer Interaction at the University of Waterloo, supervised by <a href="https://edithlaw.ca/index.html">Edith Law</a>.</p>
-<p>I completed my undergraduate studies at the University of New Brunswick, where I earned a Bachelor of Computer Science with Honours, supervised by <a href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Daniel Rea</a>, and a Bachelor of Arts in Philosophy.</p>
-<p>My recent work focuses on social robotics and the personification of conversational agents, such as voice assistants and chatbots. See my <a href="/research/">research page</a> for more.</p>
-
-<h2>News</h2>
-{% for post in collections.post %}
-  <h6>{{ post.data.title }}</h6>
-  <p>{{ post.content }}</p>
-{% endfor %}
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-12 col-lg-4">
+      <div class="mx-auto" style="width: 250px; height: 250px;">
+        <img src="/images/profile.jpeg" alt="Picture of Casey O'Neill." class="img-fluid rounded-circle border" />
+      </div>
+    </div>
+    <div class="col-12 col-lg-8 pt-4 pt-lg-0">
+      <h2>Hi, I'm Casey!</h2>
+      <div>
+        <p>I'm a second-year master's student in Human-Computer Interaction at the University of Waterloo, supervised by <a href="https://edithlaw.ca/bio.html">Dr. Edith Law</a> in the <a href="https://edithlaw.ca/index.html">Augmented Intelligence Lab</a>.</p>
+        <p>My recent work focuses on the personification of conversational agents, such as voice assistants and robots. See my <a href="/research/">research page</a> for more details.</p>
+        <p>I previously completed my undergraduate studies at the University of New Brunswick, where I <a href="https://www.unb.ca/academics/calendar/undergraduate/current/frederictonprograms/bachelorofarts/concurrentdegrees/concurrentdegreeinartsandcomputerscience.html">concurrently</a> earned a Bachelor of Computer Science with thesis-based Honours, supervised by <a href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Dr. Daniel Rea</a>, and a Bachelor of Arts with a major in Philosophy. I also gained over one year of work experience through the UNB Computer Science Co-Op Program before finding permanent part-time employment as a software developer at <a href="https://www.verosource.com"/>VeroSource Solutions</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <h2>News</h2>
+    <div>
+      <ul>
+        {% assign posts = collections.post | sort: "data.title" | reverse %}
+        {% for post in posts %}
+          <li>
+            {{ post.content }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
