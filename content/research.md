@@ -8,13 +8,18 @@ My <a href="https://cs.uwaterloo.ca/events/masters-thesis-presentation-hci-explo
 
 ## Publications
 
-- Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law. _LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition._ In CSCW 2025.
-  <p class="pt-1">Full citation on <a href="https://scholar.google.ca/scholar?q=LTJ%3A+A+Capability-based+Digital+Journaling+Tool+to+Support+Well-being+of+Newcomers+in+Life+Transition">Google Scholar</a>.</p>
-- Toushal Sewruttun, **Casey O'Neill** Edith Law, and Daniel J. Rea. _"Help Me, I'm Feeling Down!" - Neurotic Robots Increase Bystander Engagement._ In RO-MAN 2025.
+Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law. _LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition._ In CSCW 2025.
+
+> Full citation on <a href="https://scholar.google.ca/scholar?q=LTJ%3A+A+Capability-based+Digital+Journaling+Tool+to+Support+Well-being+of+Newcomers+in+Life+Transition">Google Scholar</a>.
+
+Toushal Sewruttun, **Casey O'Neill** Edith Law, and Daniel J. Rea. _"Help Me, I'm Feeling Down!" - Neurotic Robots Increase Bystander Engagement._ In RO-MAN 2025.
 
 ## Coursework
 
-- **Casey O'Neill.** 2024. _Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence._ ECE750: Social Robotics.
-  <p class="pt-1">See <a href="/downloads/CONeill_ECE750_2024.pdf">PDF</a>.</p>
-- **Casey O'Neill** and Aswad Tariq. 2024. _Using an Augmented Reality Exercise Game to Improve Exercise Experience._ CS889: Research Methods in HCI.
-  <p class="pt-1">See <a href="/downloads/CONeill_CS889_2024.pdf">PDF</a>.</p>
+**Casey O'Neill.** 2024. _Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence._ ECE750: Social Robotics.
+
+> See <a href="/downloads/CONeill_ECE750_2024.pdf">PDF</a>.
+
+**Casey O'Neill** and Aswad Tariq. 2024. _Using an Augmented Reality Exercise Game to Improve Exercise Experience._ CS889: Research Methods in HCI.
+
+> See <a href="/downloads/CONeill_CS889_2024.pdf">PDF</a>.
