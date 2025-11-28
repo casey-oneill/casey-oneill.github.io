@@ -8,9 +8,9 @@ My <a href="https://cs.uwaterloo.ca/events/masters-thesis-presentation-hci-explo
 
 ## Publications
 
-Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law. _LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition._ In CSCW 2025. <a href="https://scholar.google.ca/scholar?q=LTJ%3A+A+Capability-based+Digital+Journaling+Tool+to+Support+Well-being+of+Newcomers+in+Life+Transition"><i class="bi bi-mortarboard-fill"></i> Google Scholar</a>
+Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law. 2025. _LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition._ In CSCW 2025. <a href="https://scholar.google.ca/scholar?q=LTJ%3A+A+Capability-based+Digital+Journaling+Tool+to+Support+Well-being+of+Newcomers+in+Life+Transition"><i class="bi bi-mortarboard-fill"></i> Google Scholar</a>
 
-Toushal Sewruttun, **Casey O'Neill** Edith Law, and Daniel J. Rea. _"Help Me, I'm Feeling Down!" - Neurotic Robots Increase Bystander Engagement._ In RO-MAN 2025.
+Toushal Sewruttun, **Casey O'Neill**, Edith Law, and Daniel J. Rea. 2025. _"Help Me, I'm Feeling Down!" - Neurotic Robots Increase Bystander Engagement._ In RO-MAN 2025.
 
 ## Coursework
 
