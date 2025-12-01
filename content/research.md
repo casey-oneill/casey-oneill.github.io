@@ -16,4 +16,4 @@ Toushal Sewruttun, **Casey O'Neill**, Edith Law, and Daniel J. Rea. 2025. _"Help
 
 **Casey O'Neill.** 2024. _Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence._ ECE750: Social Robotics. [<i class="bi bi-file-earmark-pdf-fill"></i> PDF](/downloads/CONeill_ECE750_2024.pdf)
 
-**Casey O'Neill** and Aswad Tariq. 2024. _Using an Augmented Reality Exercise Game to Improve Exercise Experience._ CS889: Research Methods in HCI. [<i class="bi bi-file-earmark-pdf-fill"></i> PDF](/downloads/CONeill_CS889_2024.pdf)
+**Casey O'Neill** and Aswad Tariq. 2024. _Using an Augmented Reality Exercise Game to Improve Exercise Experiences._ CS889: Research Methods in HCI. [<i class="bi bi-file-earmark-pdf-fill"></i> PDF](/downloads/CONeill_CS889_2024.pdf)
