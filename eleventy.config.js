@@ -7,6 +7,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   // Copy additional files to the output folder
+  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("downloads");
   eleventyConfig.addPassthroughCopy("assets/favicons");
 }
