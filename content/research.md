@@ -14,7 +14,7 @@ My research interests include Human-Computer Interaction, Human-Robot Interactio
 
 #### Coursework
 
-- **Casey O'Neill.** 2025. _Exploring Gender in a Voice Agent Running Coach Application._ MMath thesis. [<i class="bi bi-file-earmark-pdf-fill"></i> URI: hdl.handle.net/10012/22775](https://hdl.handle.net/10012/22775)
+- **Casey O'Neill.** 2025. _Exploring Voice Agent Gender in a Running Coach Application._ MMath thesis. [<i class="bi bi-file-earmark-pdf-fill"></i> URI: hdl.handle.net/10012/22775](https://hdl.handle.net/10012/22775)
 
 - **Casey O'Neill.** 2024. _Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence._ ECE750: Social Robotics. [<i class="bi bi-file-earmark-pdf-fill"></i> PDF](/downloads/CONeill_ECE750_2024.pdf)
 
