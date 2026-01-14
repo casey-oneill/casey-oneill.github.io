@@ -2,7 +2,7 @@
 title: Research
 ---
 
-My research interests include Human-Computer Interaction, Human-Robot Interaction, and video games. My [master's thesis](https://cs.uwaterloo.ca/events/masters-thesis-presentation-hci-exploring-gender-and-gender-based-stereotyping-in-voice-agent-running-coach) explores the effects of gender and gender-based stereotyping in interactions with a voice agent running coach. My undergraduate research investigated how neurotic robot personalities and fictional robot backstories can be used in interactions with social robots.
+My research interests include Human-Computer Interaction, Human-Robot Interaction, and video games. My [master's thesis](https://hdl.handle.net/10012/22775) explores the effects of gender and gender-based stereotyping in interactions with a voice agent running coach. My undergraduate research investigated how neurotic robot personalities and fictional robot backstories can be used in interactions with social robots.
 
 ---
 
