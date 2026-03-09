@@ -3,7 +3,7 @@
 This is my personal website. It uses [GitHub Pages](https://docs.github.com/en/pages) with the following technologies:
 
 - [Eleventy](https://www.11ty.dev) static site generator
-- [Bootswatch](https://bootswatch.com) themes for [Bootstrap](https://getbootstrap.com) and [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Bootswatch](https://bootswatch.com) themes for [Bootstrap](https://getbootstrap.com) and [Font Awesome 7 Icons](https://fontawesome.com/v7/search)
 
 ## Develop
 
