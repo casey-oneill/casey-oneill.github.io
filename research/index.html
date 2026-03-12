@@ -1,58 +1,53 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Casey O'Neill</title>
+<html lang="en" data-bs-theme="auto">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casey O'Neill</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/litera/bootstrap.min.css">
-    
-    <script src="https://kit.fontawesome.com/89f48befff.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="vh-100 d-flex flex-column">
-    <header>
-      <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="light">
-        <div class="container">
-          <a class="navbar-brand" href="/"><h4 class="text-body">Casey O'Neill</h4></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/research/">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/downloads/CONeill_CV.pdf">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/caseyoneill/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://scholar.google.ca/citations?user=ZCi8MCgAAAAJ"><i class="fa-brands fa-google-scholar fa-lg"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://orcid.org/0009-0006-2939-3583"><i class="fa-brands fa-orcid fa-lg"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/casey-oneill"><i class="fa-brands fa-github fa-lg"></i></a>
-              </li>
-            </ul>
-          </div>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/litera/bootstrap.min.css">
+  <link rel="stylesheet" href="/bundle.css">
+</head>
+
+<body class="vh-100 d-flex flex-column">
+  <header>
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container">
+        <a class="navbar-brand h4 user-select-none" href="/">
+          Casey O'Neill
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/research/">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/downloads/CONeill_CV.pdf">CV</a>
+            </li>
+            <li class="nav-item">
+              <a id="theme-toggle" class="nav-link" href="#">
+                <i id="theme-icon" class="fa-solid fa-sun fa-lg"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main class="container flex-grow-1 py-4">
-      <h2>Research</h2>
-      <p>My research interests include Human-Computer Interaction, Human-Robot Interaction, and video games. My <a href="https://hdl.handle.net/10012/22775">master's thesis</a> explored the effects of gender in interactions with a voice agent running coach. My undergraduate research investigated how neurotic robot personalities and fictional robot backstories can be used in interactions with social robots.</p>
+      </div>
+    </nav>
+  </header>
+  <main class="container flex-grow-1 py-4">
+    <h2>Research</h2>
+    <p>My research interests include Human-Computer Interaction, Human-Robot Interaction, and video games. My <a href="https://hdl.handle.net/10012/22775">master's thesis</a> explored the effects of gender in interactions with a voice agent running coach. My undergraduate research investigated how neurotic robot personalities and fictional robot backstories can be used in interactions with social robots.</p>
 <hr>
 <h4>Publications</h4>
 <ul>
@@ -76,11 +71,76 @@
 </li>
 </ul>
 
-    </main>
-    <footer class="container py-4">
-      <p class="text-center">Website by Casey O'Neill © 2026.</p>
-    </footer>
+  </main>
+  <footer class="container py-4">
+    <p class="text-center">Website by Casey O'Neill © 2026.</p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/89f48befff.js" crossorigin="anonymous"></script>
+  <script>
+    (() => {
+      'use strict'
+
+      const getStoredTheme = () => localStorage.getItem('theme')
+      const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme) {
+          return storedTheme
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme)
+        }
+      }
+
+      setTheme(getPreferredTheme())
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme())
+        }
+      })
+
+      window.addEventListener('DOMContentLoaded', () => {
+        // Initialize all tooltips on the page
+        const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltips.forEach(el => new bootstrap.Tooltip(el));
+        
+        // Initialize theme and theme toggle
+        const themeToggle = document.querySelector('#theme-toggle')
+
+        if (!themeToggle) {
+          return
+        }
+
+        const setThemeIcon = theme => {
+          document.querySelector('#theme-icon').className = theme === 'dark' ? 'fa-solid fa-sun fa-lg' : 'fa-solid fa-moon fa-lg'
+        }
+
+        setThemeIcon(getPreferredTheme())
+
+        themeToggle.addEventListener('click', (event) => {
+          event.preventDefault()
+
+          const theme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
+
+          setStoredTheme(theme)
+          setTheme(theme)
+          setThemeIcon(theme)
+        })
+      })
+    })()
+  </script>
+</body>
+
 </html>
