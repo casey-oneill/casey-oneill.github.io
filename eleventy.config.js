@@ -8,6 +8,7 @@ export default async function (eleventyConfig) {
 
   // Copy additional files to the output folder
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("downloads");
   eleventyConfig.addPassthroughCopy("assets/favicons");
 }
