@@ -8,13 +8,27 @@ layout: layout.html
       <div class="mx-auto" style="width: 250px; height: 250px;">
         <img src="/images/profile.jpeg" alt="Picture of Casey O'Neill." class="img-fluid rounded-circle border" />
       </div>
+      <div class="d-flex flex-row gap-1 align-items-center justify-content-center pt-2">
+        <a href="https://www.linkedin.com/in/caseyoneill/" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="LinkedIn" style="height: 1.5rem;">
+          <i class="fa-brands fa-linkedin" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://scholar.google.ca/citations?user=ZCi8MCgAAAAJ" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Google Scholar" style="height: 1.5rem;">
+          <i class="fa-brands fa-google-scholar" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://orcid.org/0009-0006-2939-3583" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="ORCID" style="height: 1.5rem;">
+          <i class="fa-brands fa-orcid" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://github.com/casey-oneill" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="GitHub" style="height: 1.5rem;">
+          <i class="fa-brands fa-github" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
     </div>
     <div class="col-12 col-lg-8 pt-4 pt-lg-0">
       <h2>Hi, I'm Casey!</h2>
       <div>
         <p>I'm a second-year master's student in Human-Computer Interaction at the University of Waterloo, supervised by <a href="https://edithlaw.ca/bio.html">Dr. Edith Law</a> in the <a href="https://edithlaw.ca/index.html">Augmented Intelligence Lab</a>.</p>
         <p>My recent work focuses on the personification of conversational agents, such as voice assistants and robots. See my <a href="/research/">research page</a> for more details.</p>
-        <p>I completed my undergraduate studies at the University of New Brunswick, where I <a href="https://www.unb.ca/academics/calendar/undergraduate/current/frederictonprograms/bachelorofarts/concurrentdegrees/concurrentdegreeinartsandcomputerscience.html">concurrently</a> earned a Bachelor of Computer Science with thesis-based Honours, supervised by <a href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Dr. Daniel Rea</a>, and a Bachelor of Arts with a major in Philosophy. I also gained 16 months of work experience through the UNB Computer Science Co-Op Program before finding permanent part-time employment as a software developer.</p>
+        <p>I completed my undergraduate studies at the University of New Brunswick, where I concurrently earned a Bachelor of Computer Science with thesis-based Honours, supervised by <a href="https://hci.cs.umanitoba.ca/people/bio/daniel-rea">Dr. Daniel Rea</a>, and a Bachelor of Arts with a major in Philosophy. I also gained 16 months of work experience through the UNB Computer Science Co-Op Program before finding permanent part-time employment as a software developer.</p>
       </div>
     </div>
   </div>
@@ -25,9 +39,9 @@ layout: layout.html
       <ul>
         {% assign posts = collections.post | sort: "data.title" | reverse %}
         {% for post in posts %}
-          <li>
-            {{ post.content }}
-          </li>
+        <li>
+          {{ post.content }}
+        </li>
         {% endfor %}
       </ul>
     </div>
