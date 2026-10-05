@@ -1,5 +1,7 @@
 import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { renderCard } from "./components/index.js";
+import memoize from "memoize";
 
 export default async function (eleventyConfig) {
   // Official plugins
@@ -11,6 +13,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("downloads");
   eleventyConfig.addPassthroughCopy("assets/favicons");
+
+  // Add shortcodes
+  eleventyConfig.addShortcode("card", memoize(renderCard));
 }
 
 export const config = {

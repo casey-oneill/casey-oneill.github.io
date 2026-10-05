@@ -8,14 +8,14 @@ My research interests include Human-Computer Interaction, Human-Robot Interactio
 
 #### Publications
 
-- Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law. 2025. _LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition._ In CSCW 2025. [<i class="fa-solid fa-file"></i> DOI: 10.1145/3757491](https://doi.org/10.1145/3757491)
+{% card "LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition" "Nabil Bin Hannan, **Casey O'Neill**, Anthony Maocheia-Ricci and Edith Law" "PACM HCI/CSCW 2025" "https://doi.org/10.1145/3757491" "DOI" %}
 
-- Toushal Sewruttun, **Casey O'Neill**, Edith Law, and Daniel J. Rea. 2025. _"Help Me, I'm Feeling Down!" - Neurotic Robots Increase Bystander Engagement._ In RO-MAN 2025. [<i class="fa-solid fa-file"></i> DOI: 10.1109/RO-MAN63969.2025.11217779](https://doi.org/10.1109/RO-MAN63969.2025.11217779)
+{% card "\"Help Me, I'm Feeling Down!\" - Neurotic Robots Increase Bystander Engagement" "Toushal Sewruttun, **Casey O'Neill**, Edith Law, and Daniel J. Rea" "RO-MAN 2025" "https://doi.org/10.1109/RO-MAN63969.2025.11217779" "DOI" %}
 
 #### Coursework
 
-- **Casey O'Neill.** 2025. _Exploring Voice Agent Gender in a Running Coach Application._ MMath thesis. [<i class="fa-solid fa-file"></i> URI: hdl.handle.net/10012/22775](https://hdl.handle.net/10012/22775)
+{% card "Exploring Voice Agent Gender in a Running Coach Application" "**Casey O'Neill**" "Master's Thesis" "https://hdl.handle.net/10012/22775" "URI" %}
 
-- **Casey O'Neill.** 2024. _Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence._ ECE750: Social Robotics. [<i class="fa-solid fa-file"></i> PDF](/downloads/CONeill_ECE750_2024.pdf)
+{% card "Comparing the Effects of Verbal and Nonverbal Robot Cues on Perceived Confidence" "**Casey O'Neill**" "ECE750: Social Robotics (University of Waterloo)" "/downloads/CONeill_ECE750_2024.pdf" "PDF" %}
 
-- **Casey O'Neill** and Aswad Tariq. 2024. _Using an Augmented Reality Exercise Game to Improve Exercise Experiences._ CS889: Research Methods in HCI. [<i class="fa-solid fa-file"></i> PDF](/downloads/CONeill_CS889_2024.pdf)
+{% card "Using an Augmented Reality Exercise Game to Improve Exercise Experiences" "**Casey O'Neill** and Aswad Tariq" "CS889: Research Methods in HCI (University of Waterloo)" "/downloads/CONeill_CS889_2024.pdf" "PDF" %}
